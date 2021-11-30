@@ -133,6 +133,14 @@
         </div>
     </xsl:template>
     
+    
+    <xsl:template match="title">
+        <div>
+            <xsl:call-template name="processAtts"/>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="bibl/title">
         <span>
             <xsl:call-template name="processAtts"/>
@@ -140,9 +148,11 @@
         </span>
     </xsl:template>
     
+    
     <xsl:template match="lb">
         <br/>
     </xsl:template>
+
     
     <xsl:template match="seg | span | hi | w">
         <span>
@@ -237,7 +247,7 @@
     </xsl:template>
     
     <xsl:template match="list[@type='toc']//ref">
-        <a href="{@target}" class="toc-link"><xsl:apply-templates /></a>
+        <a href="{replace(@target,'\.xml$','.html')}" class="toc-link"><xsl:apply-templates /></a>
     </xsl:template>
     
     <xsl:template match="pb">
@@ -262,30 +272,35 @@
 
     <xsl:template name="processAtts" as="attribute()*">
         <xsl:param name="class" as="xs:string*"/>
-        <xsl:message>PROCESSING <xsl:sequence select="."/></xsl:message>
         <xsl:attribute name="class" select="
             ($class, 'tei-' || local-name())
             => string-join(' ')"/>
         
         <xsl:for-each select="@*">
-            <xsl:variable name="evaluated">
-                <xsl:apply-templates select="."/>
-            </xsl:variable>
             <xsl:attribute name="data-{local-name()}" select="string(.)"/>
         </xsl:for-each>
         <xsl:apply-templates select="@*"/>
     </xsl:template>
 
     <xsl:template match="@rend">
-        <xsl:message>HASFKJASFKLJ</xsl:message>
-        <!--<xsl:attribute name="style" 
-            select="string-join((tokenize(@rend) ! dhil:translate_rend(.)),'; ')"/>-->
+        <xsl:try>
+            <xsl:attribute name="style" separator="; ">
+                <xsl:for-each select="tokenize(.)">
+                    <xsl:value-of select="dhil:translate_rend(.)"/>
+                </xsl:for-each>
+            </xsl:attribute>
+            <xsl:catch>
+                <xsl:message select="parent::*"/>
+            </xsl:catch>
+        </xsl:try>
+
     </xsl:template>
     
     <xd:doc>
         <xd:desc>Delete unnecessary attributes, since they're handled elsewhere.</xd:desc>
     </xd:doc>
-    <xsl:template match="@*" priority="-1"/>
+    <xsl:template match="@*"/>
+    
     
     
     <xsl:function name="dhil:basename" as="xs:string" new-each-time="no">
@@ -300,8 +315,8 @@
     <xsl:function name="dhil:convert_mm" as="xs:string">
         <xsl:param name="token" as="xs:string"/>
         <xsl:variable name="num" 
-            select="replace($token,'[^\d]','') => xs:integer()" 
-            as="xs:integer"/>
+            select="replace($token,'[^\d\.]','') => xs:float()" 
+            as="xs:float"/>
         <xsl:sequence select="$num || 'rem'"/>
     </xsl:function>
     
