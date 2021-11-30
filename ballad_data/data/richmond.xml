@@ -1,0 +1,101 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    Lines Written Near Richmond, Upon the Thames, At Evening
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <lg>
+                <pb facs="Wordsworth_1798_198.png" n="180"/>
+                <head>
+                    <title type="main" rend="centre uppercase font-size(3mm)">LINES</title>
+                    <lb/>
+                    <title type="main" rend="centre uppercase font-size(1.5mm)">
+                        WRITTEN NEAR RICHMOND, UPON THE THAMES,
+                    </title>
+                    <lb/>
+                    <title type="sub" rend="centre uppercase italics font-size(2mm)">AT EVENING.</title>
+                </head>
+                <figure type="double-line" rend="length(15mm)"/>
+                <lg type="stanza">
+                    <l>How rich the wave, in front, imprest</l>
+                    <l>With evening-twilight's summer hues,</l>
+                    <l>While, facing thus the crimson west,</l>
+                    <l>The boat her silent path pursues !</l>
+                    <l>And see how dark the backward stream !</l>
+                    <l>And still, perhaps, with faithless gleam,</l>
+                    <l>Some other loiterer beguiling.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_199.png" n="181"/>
+                <lg type="stanza">
+                    <l>Such views the youthful bard allure,</l>
+                    <l>But, heedless of the following gloom,</l>
+                    <l>He deems their colours shall endure</l>
+                    <l>'Till peace go with him to the tomb.</l>
+                    <l>—And let him nurse his fond deceit,</l>
+                    <l>And what if he much die in sorrow !</l>
+                    <l>Who would not cherish dreams so sweet,</l>
+                    <l>Though grief and pain may come to-morrow ?</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Glide gently, thus for ever glide,</l>
+                    <l>O Thames ! that other bards may see,</l>
+                    <l>As lovely visions by thy side</l>
+                    <l>As now, fair river! come to me.</l>
+                    <l>Oh glide, fair stream ! for ever so ;</l>
+                    <l>Thy quiet soul on all bestowing,</l>
+                    <l>'Till all our minds for ever flow,</l>
+                    <l>As thy deep waters now are flowing.</l>
+                </lg>
+                <pb n="182" facs="Wordsworth_1798_200.png"/>
+                <lg facs="stanza">
+                    <l>Vain though ! yet be as now thou art,</l>
+                    <l>That in thy waters may be seen</l>
+                    <l>The image of a poet's heart,</l>
+                    <l>How bring, how solemn, how serene !</l>
+                    <l>Such heart did once the poet bless,</l>
+                    <l>
+                        Who, pouring here a
+                        <ptr n="*" target="#r1" xml:id="pr1"/>
+                        <hi rend="italic">later</hi>
+                        ditty,
+                    </l>
+                    <l>Could find no refuge from distress,</l>
+                    <l>But in the milder grief of pity.</l>
+                </lg>
+              
+                <lg type="stanza">
+                    <l>Remembrance ! as we glide along,</l>
+                    <l>For him suspend the dashing oar,</l>
+                    <l>And pray that never child of Song</l>
+                    <l>May know his freezing sorrows more.</l>
+                    <l>How calm ! how still ! the only sound,</l>
+                    <l>The dripping of the oar suspended!</l>
+                    <l>—The evening darkness gathers round</l>
+                    <l>By virtue's holiest powers attended.</l>
+                </lg>
+                <note xml:id="r1">
+                    * Collin's Ode on the death of Thomson, the laſt written,
+                    <lb/>
+                    I believe, of the poems which were published during his
+                    <lb/>
+                    life-time This Ode is alluded to in the next stanza.
+                </note>
+            </lg>
+        </body>
+    </text>
+</TEI>
+

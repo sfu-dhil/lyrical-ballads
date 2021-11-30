@@ -1,0 +1,103 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    Lines written at a small distance from my house, and sent by my little boy to the person to whom they are addressed.
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <lg>
+                <pb facs="Wordsworth_1798_113.png"/>
+                <head>
+                    <title type="main" rend="centre uppercase font-size(3mm)">LINES</title>
+                    <title type="sub" rend="centre uppercase font-size(1.5mm)">
+                        WRITTEN AT A SMALL DISTANCE FROM MY HOUSE,
+                        <lb/>
+                        AND SENT BY MY LITTLE BOY TO THE
+                        <lb/>
+                        PERSON TO WHOM THEY ARE
+                        <lb/>
+                        ADDRESSED.
+                    </title>
+                </head>
+                <figure type="double-line" rend="length(15mm)"/>
+                <lg type="stanza">
+                    <l>It is the first mild day of March:</l>
+                    <l>Each minute sweeter than before,</l>
+                    <l>The red-breast sings from the tall larch</l>
+                    <l>That stands beside our door.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>There is a blessing in the air,</l>
+                    <l>Which seems a sense of joy to yield</l>
+                    <l>The bare trees, and mountains bare,</l>
+                    <l>And grass in the green field.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_114.png" n="96"/>
+                <lg type="stanza">
+                    <l>My Sister! (tis a wish of mine)</l>
+                    <l>Now that our morning meal is done,</l>
+                    <l>Make haste, your morning task resign ;</l>
+                    <l>Come forth and feel the sun.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Edward will come with you, and pray,</l>
+                    <l>Put on with speed your woodland dress,</l>
+                    <l>And bring no book, for this one day</l>
+                    <l>We’ll give to idleness.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>No joyless forms shall regulate</l>
+                    <l>Our living Calendar :</l>
+                    <l>We from to-day, my friend, will date</l>
+                    <l>The opening of the year.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Love, now an universal birth,</l>
+                    <l>From heart to heart is stealing,</l>
+                    <l>From earth to man, from man to earth,</l>
+                    <l>—It is the hour of feeling.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_115.png" n="97"/>
+                <lg type="stanza">
+                    <l>One moment now may give us more</l>
+                    <l>Than fifty years of reason;</l>
+                    <l>Our minds shall drink at every pore</l>
+                    <l>The spirit of the season.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Some silent laws our hearts may make,</l>
+                    <l>Which they shall long obey ;</l>
+                    <l>We for the year to come may take</l>
+                    <l>Our temper from to-day.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>And from the blessed power that rolls</l>
+                    <l>About, below, above ;</l>
+                    <l>We’ll frame the measure of our souls,</l>
+                    <l>They shall be tuned to love.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Then come, my sister! come, I pray,</l>
+                    <l>With speed put on your woodland dress,</l>
+                    <l>And bring no books ; for this one day</l>
+                    <l>We’ll give to idleness.</l>
+                </lg>
+             
+            </lg>
+        </body>
+    </text>
+</TEI>
+

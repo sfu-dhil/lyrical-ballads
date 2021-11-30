@@ -1,0 +1,87 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>
+                    The Tables Turned; An Evening Scene, on the Same Subject.
+                </title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Lyrical Ballads</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>
+                    Poems transcribed from OCR and Page Scans of the 1798 Edition of Lyrical Ballads held at Simon Fraser University
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <lg type="poem">
+                    <pb facs="Wordsworth_1798_204.png" n="186"/>
+                    <head type="main" rend="centre uppercase font-size(3mm)">
+                        THE TABLES TURNED;
+                        <lb/>
+                        <seg type="subheader" rend="centre uppercase font-size(1.5mm)">AN EVENING SCENE, ON THE SAME SUBJECT</seg>
+                        <figure type="double-line" rend="length(15mm)"/>
+                    </head>
+                    <lg type="stanza">
+                        <l>Up ! up ! my friend, and clear your looks,</l>
+                        <l>Why all this toil and trouble ?</l>
+                        <l>Up ! up ! my friend, and quit your books,</l>
+                        <l>Or surely you’ll grow double.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>The sun above the mountain’s head,</l>
+                        <l>A freshening lustre mellow,</l>
+                        <l>Through all the long green fields has spread,</l>
+                        <l>His first sweet evening yellow.</l>
+                    </lg>
+                    <pb facs="Wordsworth_1798_205.png" n="187"/>
+                    <lg type="stanza">
+                        <l>Books! ’tis a dull and endless strife,</l>
+                        <l>Come, hear the woodland linnet,</l>
+                        <l>How sweet his music; on my life</l>
+                        <l>There’s more of wisdom in it.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>And hark ! how blithe the throstle sings !</l>
+                        <l>And he is no mean preacher ;</l>
+                        <l>Come forth into the light of things,</l>
+                        <l>Let Nature be your teacher.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>She has a world of ready wealth,</l>
+                        <l>Our minds and hearts to bless—</l>
+                        <l>Spontaneous wisdom breathed by health,</l>
+                        <l>Truth breathed by chearfulness.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>One impulse from a vernal wood</l>
+                        <l>May teach you more of man ;</l>
+                        <l>Of moral evil and of good,</l>
+                        <l>Than all the sages can.</l>
+                    </lg>
+                    <pb facs="Wordsworth_1798_206.png" n="188"/>
+                    <lg type="stanza">
+                        <l>Sweet is the lore which nature brings;</l>
+                        <l>Our meddling intellect</l>
+                        <l>Mishapes the beauteous forms of things ;</l>
+                        <l>—We murder to dissect.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>Enough of science and of art;</l>
+                        <l>Close up these barren leaves ;</l>
+                        <l>Come forth, and bring with you a heart</l>
+                        <l>That watches and receives.</l>
+                    </lg>
+                </lg>
+            </p>
+        </body>
+    </text>
+</TEI>
+

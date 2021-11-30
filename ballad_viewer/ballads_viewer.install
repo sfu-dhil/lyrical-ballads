@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for this module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function ballads_viewer_install() {
+  variable_get('ballads_viewer_linkxml', TRUE);
+  variable_get('ballads_viewer_min_font_px', '8.0');
+  variable_get('ballads_viewer_mmpx_ratio', '8.0');
+  variable_get('ballads_viewer_debug', FALSE);
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function ballads_viewer_uninstall() {
+  variable_del('ballads_viewer_linkxml');
+  variable_del('ballads_viewer_min_font_px');
+  variable_del('ballads_viewer_mmpx_ratio');
+  variable_del('ballads_viewer_debug');
+}

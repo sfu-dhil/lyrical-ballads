@@ -1,0 +1,72 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lines Written in Early Spring</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Lyrical Ballads</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>
+                    Poems transcribed from OCR and Page Scans of the 1798 Edition of Lyrical Ballads held at Simon Fraser University
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <lg type="poem">
+                    <pb facs="Wordsworth_1798_133.png"/>
+                    <head type="main" rend="centre uppercase font-size(3mm)">
+                        LINES</head>
+                    <head type="sub" rend="centre uppercase font-size(1.5mm)">
+                        WRITTEN IN EARLY SPRING.
+                    </head>
+                        <figure type="double-line" rend="length(15mm)"/>
+             
+                    <lg type="stanza">
+                        <l>I heard a thousand blended notes,</l>
+                        <l>While in a grove I sate reclined,</l>
+                        <l>In that sweet mood when pleasant thoughts</l>
+                        <l>Bring sad thoughts to the mind.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>To her fair works did nature link</l>
+                        <l>The human soul that through me ran ;</l>
+                        <l>And much it griev’d my heart to think</l>
+                        <l>What man has made of man.</l>
+                    </lg>
+                    <pb facs="Wordsworth_1798_134.png" n="116"/>
+                    <lg type="stanza">
+                        <l>Through primrose-tufts, in that sweet bower,</l>
+                        <l>The periwinkle trail’d is wreathes ;</l>
+                        <l>And ’tis my faith that every flower</l>
+                        <l>Enjoys the air it breathes.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>The birds around me hopp’d and play’d :</l>
+                        <l>Their thoughts I cannot measure,</l>
+                        <l>But the least motion which they made,</l>
+                        <l>It seem’d a thrill of pleasure.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>The budding twigs spread out their fan,</l>
+                        <l>To catch the breezy air ;</l>
+                        <l>And I must think, do all I can,</l>
+                        <l>That there was pleasure there.</l>
+                    </lg>
+                    <lg type="stanza">
+                        <l>If I these thoughts may not prevent,</l>
+                        <l>If such be of my creed the plan,</l>
+                        <l>Have I not reason to lament</l>
+                        <l>What man has made of man ?</l>
+                    </lg>
+                </lg>
+            </p>
+        </body>
+    </text>
+</TEI>

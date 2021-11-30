@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="buildLyricalBallads" default="all">
+   
+   
+   
+   <property name="tmp" value="${basedir}/tmp"/>
+   <property name="debug" value="0"/>
+   
+   
+   <property name="src.dir" value="${basedir}/ballad_data"/>
+   <property name="src.xml.dir" value="${src.dir}/data"/>
+   <property name="src.facs.dir" value="${src.dir}/facs"/>
+   
+   <property name="dist.dir" value="${basedir}/public"/>
+   <property name="dist.xml.dir" value="${dist.dir}/xml"/>
+   <property name="dist.facs.dir" value="${dist.dir}/facs"/>
+   
+   <property name="xsl.dir" value="${basedir}/static/xsl"/>
+   
+   <target name="init">
+      <delete dir="${dist.dir}"/>
+      <mkdir dir="${dist.dir}"/>
+   </target>
+   
+   <!--First, move the data over-->
+   
+   <target name="copyXML">
+      <description>Copies all of the necessary XML files over</description>
+      <mkdir dir="${dist.xml.dir}"/>
+      <copy todir="${dist.xml.dir}">
+         <fileset dir="${src.xml.dir}">
+            <include name="*.xml"/>
+            <!--Exclude "end.xml" since it's broken-->
+            <exclude name="end.xml"/>
+            <exclude name="*.MODS.xml"/>
+         </fileset>
+      </copy>
+   </target>
+   
+   <target name="copyFacs">
+      <description>Copies all of the facsimile files over</description>
+      <mkdir dir="${dist.facs.dir}"/>
+      <copy todir="${dist.facs.dir}">
+         <fileset dir="${src.facs.dir}">
+            <include name="*"/>
+         </fileset>
+      </copy>
+   </target>
+   
+   <target name="html">
+      <description>Converts all of the XML files to HTML.</description>
+      <exec executable="saxon">
+         <arg line="-xsl:${xsl.dir}/html_master.xsl -it:go dist=${dist.dir}"/>
+      </exec>
+   </target>
+   
+   
+   
+   
+   
+   <target name="all" depends="init, copyXML, copyFacs, html"/>
+   
+  
+   
+   
+   
+</project>

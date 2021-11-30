@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * @file
+ * Defines all the hooks this module implements.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function ballads_viewer_menu() {
+  return array(
+	'admin/islandora/islandora_viewers/ballads_viewer' => array(
+	  'title' => 'Ballads XML Viewer',
+	  'description' => 'Configure the Lyrical Ballads viewer.',
+	  'page callback' => 'drupal_get_form',
+	  'page arguments' => array('ballads_viewer_admin'),
+	  'access arguments' => array('administer site configuration'),
+	  'file' => 'includes/admin.form.inc',
+	  'type' => MENU_NORMAL_ITEM,
+	)
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ballads_viewer_theme() {
+  return array(
+    'ballads_viewer' => array(
+	  'file' => 'theme/theme.inc',
+	  'template' => 'theme/ballads_viewer',
+      'variables' => array(		
+        'islandora_object' => NULL,
+        'ballads_viewer_content' => null,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_islandora_viewer_info().
+ */
+function ballads_viewer_islandora_viewer_info() {
+  return array(
+    'ballads_viewer' => array(
+      'label' => t('Ballads XML Viewer'),
+      'description' => t('A simple XML viewer for the Lyrical Ballads.'),
+      'configuration' => 'admin/islandora/islandora_viewers/ballads_viewer',
+      'callback' => 'ballads_viewer_callback',
+      'model' => array(
+        'islandora:sp_simple_xml',
+      ),
+      'mimetype' => array('application/xml'),
+    ),
+  );
+}
+
+/**
+ * Callback function for the viewer.
+ *
+ * @param array $params
+ *   The params for the theme function 'ballads_viewer'.
+ * @param IslandoraFedoraObject $islandora_object
+ *   The object that we are viewing.
+ *
+ * @return string
+ *   HTML repersentation of the Simple XML Viewer.
+ */
+function ballads_viewer_callback(array $params, IslandoraFedoraObject $islandora_object = null) {
+  if( ! isset($islandora_object['OBJ']) || $islandora_object['OBJ']->mimetype !== 'application/xml') {
+	return;
+  }
+  if( ! islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $islandora_object['OBJ'])) {
+    return;
+  }
+  $markup = theme('ballads_viewer', array(
+    'islandora_object' => $islandora_object,
+    'ballads_viewer_content' => '',
+  ));
+  return $markup;  
+}

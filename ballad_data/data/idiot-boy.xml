@@ -1,0 +1,714 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Idiot Boy</title>
+        <author>William Wordsworth</author>
+        <respStmt>
+          <resp>The poem was transcribed by</resp>
+          <name xml:id="BD">Brenna Duperron</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Lyrical Ballads</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Poems transcribed from OCR and Page Scans of the 1798 Edition of Lyrical Ballads
+                    held at Simon Fraser University</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <lg type="poem">
+        <pb facs="Wordsworth_1798_165.png"/>
+        <head rend="centre uppercase font-size(1.5mm)">THE</head>
+        <head rend="centre uppercase font-size(3mm)"> IDIOT BOY.</head>
+        <pb facs="Wordsworth_1798_166.png"/>
+        <pb facs="Wordsworth_1798_167.png" n="149"/>
+        <head rend="centre uppercase font-size(1.5mm)">THE</head>
+        <head rend="centre uppercase font-size(3mm)"> IDIOT BOY.</head>
+        <figure type="double-line" rend="length(15mm)"/>
+        <lg type="stanza">
+          <l>'Tis eight o'clock, –– a clear March night,</l>
+          <l>The moon is up–– the sky is blue,</l>
+          <l>he owlet in the moonlight air,</l>
+          <l>He shouts from nobody knows where; </l>
+          <l>He lengthens out his lonely shout, </l>
+          <l>Halloo! halloo! a long halloo! </l>
+        </lg>
+        <lg type="stanza">
+          <l>––Why bustle thus about your door,</l>
+          <l>What means this bustle, Betty Foy? </l>
+          <l>Why are you in this mighty fret?</l>
+          <l>And why on horseback have you set</l>
+          <l>Him whom you love, your idiot boy?</l>
+        </lg>
+        <pb facs="Wordsworth_1798_168.png" n="150"/>
+        <lg type="stanza">
+          <l>Beneath the moon that shines so bright, </l>
+          <l>Till she is tired, let Betty Foy </l>
+          <l>With girt and stirrup fiddle-faddle;</l>
+          <l>But wherefore set upon a saddle </l>
+          <l>Him whom she loves, her idiot boy?</l>
+        </lg>
+        <lg type="stanza">
+          <l>There’s scarce a soul that's out of bed;</l>
+          <l>Good Betty! put him down again;</l>
+          <l>His lips with joy they burr at you,</l>
+          <l>But, Betty! what has he to do </l>
+          <l>With stirrup, saddle, or with rein?</l>
+        </lg>
+        <lg type="stanza">
+          <l>The world will say ’tis very idle,</l>
+          <l>Bethink you of the time of night; </l>
+          <l>There’s not a mother, no not one,</l>
+          <l>But when she hears what you have done, </l>
+          <l>Oh! Betty she’ll be in a fright.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_169.png" n="151"/>
+        <lg type="stanza">
+          <l>But Betty's bent on her intent,</l>
+          <l>For her good neighbour, Susan Gale, </l>
+          <l>Old Susan, she who dwells alone,</l>
+          <l>Is sick, and makes a piteous moan,</l>
+          <l>As if her very life would fail.</l>
+        </lg>
+        <lg type="stanza">
+          <l>There’s not a house within a mile,</l>
+          <l>No hand to help them in distress:</l>
+          <l>Old Susan lies a bed in pain,</l>
+          <l>And sorely puzzled are the twain,</l>
+          <l>For what she ails they cannot guess.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty’s husband’s at the wood, </l>
+          <l>Where by the week he doth abide,</l>
+          <l>A woodman in the distant vale;</l>
+          <l>There’s none to help poor Susan Gale, </l>
+          <l> What must be done? what will betide?</l>
+        </lg>
+        <pb facs="Wordsworth_1798_170.png" n="152"/>
+        <lg type="stanza">
+          <l>And Betty from the lane has fetched </l>
+          <l>Her pony, that is mild and good, </l>
+          <l>Whether he be in joy or pain, </l>
+          <l>Feeding at will along the lane,</l>
+          <l>Or bringing faggots from the wood.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And he is all in travelling trim,</l>
+          <l>And by the moonlight, Betty Foy </l>
+          <l>Has up upon the saddle set,</l>
+          <l>The like was never heard of yet,</l>
+          <l>Him whom she loves, her idiot boy.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And he must post without delay </l>
+          <l>Across the bridge that’s in the dale, </l>
+          <l>And by the church, and o’er the down, </l>
+          <l>To bring a doctor from the town,</l>
+          <l>Or she will die, old Susan Gale.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_171.png" n="153"/>
+        <lg type="stanza">
+          <l>There is no need of boot or spur,</l>
+          <l>There is no need of whip or wand,</l>
+          <l>For Johnny has his holly-bough,</l>
+          <l>And with a hurly-burly now </l>
+          <l>He shakes the green bough in his hand.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty o’er and o’er has told </l>
+          <l>The boy who is her best delight,</l>
+          <l>Both what to follow, what to shun,</l>
+          <l>What do, and what to leave undone,</l>
+          <l>How turn to left, and how to right.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty’s most especial charge,</l>
+          <l>Was, “ Johnny! Johnny! mind that you </l>
+          <l>“Come home again, nor stop at all, </l>
+          <l>“Come home again, whate’er befal,</l>
+          <l> “My Johnny do, I pray you do." </l>
+        </lg>
+        <pb facs="Wordsworth_1798_172.png" n="154"/>
+        <lg type="stanza">
+          <l>To this did Johnny answer make,</l>
+          <l>Both with his head, and with his hand, </l>
+          <l>And proudly shook the bridle too,</l>
+          <l>And then! his words were not a few, </l>
+          <l>Which Betty well could understand.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now that Johnny is just going, </l>
+          <l>Though Betty’s in a mighty flurry,</l>
+          <l>She gently pats the pony’s side,</l>
+          <l>On which her idiot boy must ride,</l>
+          <l>And seems no longer in a hurry.</l>
+        </lg>
+        <lg type="stanza">
+          <l>But when the pony moved his legs,</l>
+          <l>Oh! then for the poor idiot boy!</l>
+          <l>For joy he cannot hold the bridle,</l>
+          <l>For joy his head and heels are idle,</l>
+          <l> He’s idle all for very joy.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_173.png" n="155"/>
+        <lg type="stanza">
+          <l>And while the pony moves his legs,</l>
+          <l>In Johnny’s left-hand you may see,</l>
+          <l>The green bough’s motionless and dead;</l>
+          <l>The moon that shines above his head </l>
+          <l>Is not more still and mute than he.</l>
+        </lg>
+        <lg type="stanza">
+          <l>His heart it was so full of glee,</l>
+          <l>That till full fifty yards were gone,</l>
+          <l>He quite forgot his holly whip,</l>
+          <l>And all his skill in horsemanship,</l>
+          <l>Oh! happy, happy, happy John.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty’s standing at the door,</l>
+          <l>And Betty’s face with joy o’erflows, </l>
+          <l>Proud of herself, and proud of him, </l>
+          <l>She sees him in his travelling trim; </l>
+          <l>How quietly her Johnny goes.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_174.png" n="156"/>
+        <lg type="stanza">
+          <l>The silence of her idiot boy,</l>
+          <l>What hopes it sends to Betty's heart! </l>
+          <l>He’s at the guide-post— he turns right, </l>
+          <l>She watches till he’s out of sight,</l>
+          <l>And Betty will not then depart.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Burr, burr—– now Johnny's lips they burr, </l>
+          <l>As loud as any mill, or near it,</l>
+          <l>Meek as a lamb the pony moves,</l>
+          <l>And Johnny makes the noise he loves, </l>
+          <l>And Betty listens, glad to hear it.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Away she hies to Susan Gale:</l>
+          <l>And Johnny’s in a merry tune,</l>
+          <l>The owlets hoot, the owlets curr,</l>
+          <l>And Johnny’s lips they burr, burr, burr, </l>
+          <l>And on he goes beneath the moon.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_175.png" n="157"/>
+        <lg type="stanza">
+          <l>His steed and he right well agree,</l>
+          <l>For of this pony there’s a rumour,</l>
+          <l>That should he lose his eyes and ears,</l>
+          <l>And should he live a thousand years,</l>
+          <l>He never will be out of humour.</l>
+        </lg>
+        <lg type="stanza">
+          <l>But then he is a horse that thinks!</l>
+          <l>And when he thinks his pace is slack; </l>
+          <l>Now, though he knows poor Johnny well, </l>
+          <l>Yet for his life he cannot tell.</l>
+          <l>What he has got upon his back.</l>
+        </lg>
+        <lg type="stanza">
+          <l>So through the moonlight lanes they go, </l>
+          <l>And far into the moonlight dale,</l>
+          <l>And by the church, and o’er the down, </l>
+          <l>To bring a doctor from the town,</l>
+          <l>To comfort poor old Susan Gale.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_176.png" n="158"/>
+        <lg type="stanza">
+          <l>And Betty, now at Susan’s side,</l>
+          <l>Is in the middle of her story,</l>
+          <l>What comfort Johnny soon will bring, </l>
+          <l>With many a most diverting thing,</l>
+          <l>Of Johnny’s wit and Johnny’s glory.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty’s still at Susan’s side:</l>
+          <l>By this time she’s not quite so flurried; </l>
+          <l>Demure with porringer and plate </l>
+          <l>She sits, as if in Susan’s fate </l>
+          <l>Her life and soul were buried.</l>
+        </lg>
+        <lg type="stanza">
+          <l>But Betty, poor good woman! she,</l>
+          <l>You plainly in her face may read it, </l>
+          <l>Could lend out of that moment's store </l>
+          <l>Five years of happiness or more,</l>
+          <l>To any that might need it.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_177.png" n="159"/>
+        <lg type="stanza">
+          <l>But yet I guess that now and then </l>
+          <l>With Betty all was not so well,</l>
+          <l>And to the road she turns her ears,</l>
+          <l>And thence full many a sound she hears,</l>
+          <l>Which she to Susan will not tell.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Poor Susan moans, poor Susan groans,</l>
+          <l>“As sure as there’s a moon in heaven," </l>
+          <l>Cries Betty, “he’ll be back again;</l>
+          <l>"They’ll both be here, ’tis almost ten,</l>
+          <l>“They’ll both be here before eleven."</l>
+        </lg>
+        <lg type="stanza">
+          <l>Poor Susan moans, poor Susan groans, </l>
+          <l>The clock gives warning for eleven;</l>
+          <l>’Tis on the stroke— “If Johnny’s near," </l>
+          <l>Quoth Betty “he will soon be here,</l>
+          <l>“As sure as there’s a moon in heaven."</l>
+        </lg>
+        <pb facs="Wordsworth_1798_178.png" n="160"/>
+        <lg type="stanza">
+          <l>The clock is on the stroke of twelve, </l>
+          <l>And Johnny is not yet in sight,</l>
+          <l>The moon’s in heaven, as Betty sees, </l>
+          <l>But Betty is not quite at ease;</l>
+          <l>And Susan has a dreadful night.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty, half an hour ago,</l>
+          <l>On Johnny vile reflections cast;</l>
+          <l>“A little idle sauntering thing!" </l>
+          <l>With other names, an endless string, </l>
+          <l>But now that time is gone and past.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty’s drooping at the heart, </l>
+          <l>That happy time all past and gone,</l>
+          <l>“How can it be he is so late?</l>
+          <l>"The doctor he has made him wait,</l>
+          <l>“Susan! they’ll both be here anon."</l>
+        </lg>
+        <pb facs="Wordsworth_1798_179.png" n="161"/>
+        <lg type="stanza">
+          <l>And Susan’s growing worse and worse,</l>
+          <l>And Betty’s in a sad quandary;</l>
+          <l>And then there’s nobody to say </l>
+          <l>If she must go or she must stay:</l>
+          <l>—–She’s in a sad quandary.</l>
+        </lg>
+        <lg type="stanza">
+          <l>The clock is on the stroke of one; </l>
+          <l>But neither Doctor nor his guide </l>
+          <l>Appear along the moonlight road, </l>
+          <l>There’s neither horse nor man abroad, </l>
+          <l>And Betty’s still at Susan’s side.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Susan she begins to fear </l>
+          <l>Of sad mischances not a few,</l>
+          <l>That Johnny may perhaps be drown’d, </l>
+          <l>Or lost perhaps, and never found; </l>
+          <l>Which they must both for ever rue.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_180.png" n="162"/>
+        <lg type="stanza">
+          <l>She prefaced half a hint of this </l>
+          <l>With, “God forbid it should be true!"</l>
+          <l>At the first word that Susan said</l>
+          <l>Cried Betty, rising from the bed,</l>
+          <l>“Susan, I’d gladly stay with you.</l>
+        </lg>
+        <lg type="stanza">
+          <l>"I must be gone, I must away, </l>
+          <l>"Consider, Johnny's but half-wise;</l>
+          <l>“Susan, we must take care of him,</l>
+          <l>“If he is hurt in life or limb" –—</l>
+          <l>“ Oh God forbid!" poor Susan cries.</l>
+        </lg>
+        <lg type="stanza">
+          <l>"What can I do?" says Betty, going,</l>
+          <l>“What can I do to ease your pain?</l>
+          <l>“Good Susan tell me, and I’ll stay; </l>
+          <l>“I fear you’re in a dreadful way,</l>
+          <l>“But I shall soon be back again,"</l>
+        </lg>
+        <pb facs="Wordsworth_1798_181.png" n="163"/>
+        <lg type="stanza">
+          <l>“Good Betty go, good Betty go,</l>
+          <l>“There’s nothing that can ease my pain." </l>
+          <l>Then off she hies, but with a prayer </l>
+          <l>That God poor Susan’s life would spare, </l>
+          <l>Till she comes back again.</l>
+        </lg>
+        <lg type="stanza">
+          <l>So, through the moonlight lane she goes,</l>
+          <l>And far into the moonlight dale;</l>
+          <l>And how she ran, and how she walked, </l>
+          <l>And all that to herself she talked, </l>
+          <l>Would surely be a tedious tale.</l>
+        </lg>
+        <lg type="stanza">
+          <l>In high and low, above, below,</l>
+          <l>In great and small, in round and square, </l>
+          <l>In tree and tower was Johnny seen,</l>
+          <l>In bush and brake, in black and green, </l>
+          <l>’Twas Johnny, Johnny, every where.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_182.png" n="164"/>
+        <lg type="stanza">
+          <l>She’s past the bridge that’s in the dale,</l>
+          <l>And now the thought torments her sore, </l>
+          <l>Johnny perhaps his horse forsook,</l>
+          <l>To hunt the moon that's in the brook, </l>
+          <l>And never will be heard of more.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now she’s high upon the down,</l>
+          <l>Alone amid a prospect wide;</l>
+          <l>There’s neither Johnny nor his horse,</l>
+          <l>Among the fern or in the gorse;</l>
+          <l>There’s neither doctor nor his guide.</l>
+        </lg>
+        <lg type="stanza">
+          <l>“Oh saints! what is become of him?</l>
+          <l>“Perhaps he's climbed into an oak,</l>
+          <l>“Where he will stay till he is dead;</l>
+          <l>“Or sadly he has been misled,</l>
+          <l>“And joined the wandering gypsey-folk.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_183.png" n="165"/>
+        <lg type="stanza">
+          <l>“Or him that wicked pony’s carried </l>
+          <l>“To the dark cave, the goblins’ hall,</l>
+          <l>“Or in the castle he’s pursuing,</l>
+          <l>"Among the ghosts, his own undoing;</l>
+          <l>"Or playing with the waterfall."</l>
+        </lg>
+        <lg type="stanza">
+          <l>At poor old Susan then she railed, </l>
+          <l>While to the town she posts away;</l>
+          <l>“If Susan had not been so ill,</l>
+          <l>“Alas! I should have had him still, </l>
+          <l>"My Johnny, till my dying day."</l>
+        </lg>
+        <lg type="stanza">
+          <l>Poor Betty! in this sad distemper,</l>
+          <l>The doctor’s self would hardly spare, </l>
+          <l>Unworthy things she talked and wild, </l>
+          <l>Even he, of cattle the most mild,</l>
+          <l>The pony had his share.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_184.png" n="166"/>
+        <lg type="stanza">
+          <l>And now she’s got into the town,</l>
+          <l>And to the doctor’s door she hies;</l>
+          <l>’Tis silence all on every side;</l>
+          <l>The town so long, the town so wide,</l>
+          <l>Is silent as the skies.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now she’s at the doctor's door,</l>
+          <l>She lifts the knocker, rap, rap, rap,</l>
+          <l>The doctor at the casement shews,</l>
+          <l>His glimmering eyes that peep and doze; </l>
+          <l>And one hand rubs his old night-cap.</l>
+        </lg>
+        <lg type="stanza">
+          <l>“Oh Doctor! Doctor! where's my Johnny?</l>
+          <l>“I’m here, what is’t you want with me?" </l>
+          <l>“Oh Sir! you know I’m Betty Foy,</l>
+          <l>“And I have lost my poor dear boy,</l>
+          <l>“You know him—him you often see;</l>
+        </lg>
+        <pb facs="Wordsworth_1798_185.png" n="167"/>
+        <lg type="stanza">
+          <l>"He’s not so wise as some folks be,"</l>
+          <l>“The devil take his wisdom!" said </l>
+          <l>The Doctor, looking somewhat grim,</l>
+          <l>“What, woman! should I know of him?" </l>
+          <l>And, grumbling, he went back to bed.</l>
+        </lg>
+        <lg type="stanza">
+          <l>“O woe is me! O woe is me!</l>
+          <l>“Here will I die; here will I die;</l>
+          <l>“I thought to find my Johnny here,</l>
+          <l>“But he is neither far nor near,</l>
+          <l>"Oh! what a wretched mother I!"</l>
+        </lg>
+        <lg type="stanza">
+          <l>She stops, she stands, she looks about, </l>
+          <l>Which way to turn she cannot tell.</l>
+          <l>Poor Betty! it would ease her pain </l>
+          <l>If she had heart to knock again;</l>
+          <l>—The clock strikes three—a dismal knell!</l>
+        </lg>
+        <pb facs="Wordsworth_1798_186.png" n="168"/>
+        <lg type="stanza">
+          <l>Then up along the town she hies,</l>
+          <l>No wonder if her senses fail,</l>
+          <l>This piteous news so much it shock’d her,</l>
+          <l>She quite forgot to send the Doctor,</l>
+          <l>To comfort poor old Susan Gale.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now she’s high upon the down,</l>
+          <l>And she can see a mile of road,</l>
+          <l>“Oh cruel! I’m almost three-score;</l>
+          <l>“Such night as this was ne’er before,</l>
+          <l>“There’s not a single soul abroad."</l>
+        </lg>
+        <lg type="stanza">
+          <l>She listens, but she cannot hear </l>
+          <l>The foot of horse, the voice of man; </l>
+          <l>The streams with softest sound are flowing,</l>
+          <l>The grass you almost hear it growing, </l>
+          <l>You hear it now if e'er you can.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_187.png" n="169"/>
+        <lg type="stanza">
+          <l>The owlets through the long blue night</l>
+          <l>Are shouting to each other still:</l>
+          <l>Fond lovers, yet not quite hob nob, </l>
+          <l>They lengthen out the tremulous sob, </l>
+          <l>That echoes far from hill to hill.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Poor Betty now has lost all hope,</l>
+          <l>Her thoughts are bent on deadly sin; </l>
+          <l>A green-grown pond she just has pass’d,</l>
+          <l>And from the brink she hurries fast, </l>
+          <l>Lest she should drown herself therein.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now she sits her down and weeps; </l>
+          <l>Such tears she never shed before;</l>
+          <l>“Oh dear, dear pony! my sweet joy!</l>
+          <l>"Oh carry back my idiot boy!</l>
+          <l>"And we will ne’er o’erload thee more."</l>
+        </lg>
+        <pb facs="Wordsworth_1798_188.png" n="170"/>
+        <lg type="stanza">
+          <l>A thought is come into her head;</l>
+          <l>“The pony he is mild and good,</l>
+          <l>“And we have always used him well;</l>
+          <l>“Perhaps lie’s gone along the dell,</l>
+          <l>“And carried Johnny to the wood."</l>
+        </lg>
+        <lg type="stanza">
+          <l>Then up she springs as if on wings; </l>
+          <l>She thinks no more of deadly sin;</l>
+          <l>If Betty fifty ponds should see,</l>
+          <l>The last of all her thoughts would be, </l>
+          <l>To drown herself therein.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Oh reader! now that I might tell </l>
+          <l>What Johnny and his horse are doing! </l>
+          <l>What they’ve been doing all this time, </l>
+          <l>Oh could I put it into rhyme,</l>
+          <l>A most delightful tale pursuing!</l>
+        </lg>
+        <pb facs="Wordsworth_1798_189.png" n="171"/>
+        <lg type="stanza">
+          <l>Perhaps, and no unlikely thought!</l>
+          <l>He with his pony now doth roam </l>
+          <l>The cliffs and peaks so high that are, </l>
+          <l>To lay his hands upon a star,</l>
+          <l>And in his pocket bring it home.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Perhaps he’s turned himself about,</l>
+          <l>His face unto his horse’s tail,</l>
+          <l>And still and mute, in wonder lost,</l>
+          <l>All like a silent horseman-ghost,</l>
+          <l>He travels on along the vale.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now, perhaps, he’s hunting sheep, </l>
+          <l>A fierce and dreadful hunter he!</l>
+          <l>Yon valley, that’s so trim and green,</l>
+          <l>In five months’ time, should he be seen, </l>
+          <l>A desart wilderness will be.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_190.png" n="172"/>
+        <lg type="stanza">
+          <l>Perhaps, with head and heels on fire,</l>
+          <l>And like the very soul of evil,</l>
+          <l>He’s galloping away, away,</l>
+          <l>And so he’ll gallop on for aye,</l>
+          <l>The bane of all that dread the devil.</l>
+        </lg>
+        <lg type="stanza">
+          <l>I to the muses have been bound,</l>
+          <l>These fourteen years, by strong indentures; </l>
+          <l>Oh gentle muses! let me tell </l>
+          <l>But half of what to him befell,</l>
+          <l>For sure he met with strange adventures.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Oh gentle muses! is this kind?</l>
+          <l>Why will ye thus my suit repel?</l>
+          <l>Why of your further aid bereave me?</l>
+          <l>And can ye thus unfriended leave me?</l>
+          <l>Ye muses! whom I love so well.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_191.png" n="173"/>
+        <lg type="stanza">
+          <l>Who’s yon, that, near the waterfall,</l>
+          <l>Which thunders down with headlong force, </l>
+          <l>Beneath the moon, yet shining fair,</l>
+          <l>As careless as if nothing were,</l>
+          <l>Sits upright on a feeding horse?</l>
+        </lg>
+        <lg type="stanza">
+          <l>Unto his horse, that’s feeding free,</l>
+          <l>He seems, I think, the rein to give;</l>
+          <l>Of moon or stars he takes no heed;</l>
+          <l>Of such we in romances read,</l>
+          <l>—Tis Johnny! Johnny! as I live.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And that’s the very pony too.</l>
+          <l>Where is she, where is Betty Foy?</l>
+          <l>She hardly can sustain her fears;</l>
+          <l>The roaring water-fall she hears,</l>
+          <l>And cannot find her idiot boy.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_192.png" n="174"/>
+        <lg type="stanza">
+          <l>Your pony’s worth his weight in gold, </l>
+          <l>Then calm your terrors, Betty Foy! </l>
+          <l>She’s coming from among the trees,</l>
+          <l>And now, all full in view, she sees</l>
+          <l>Him whom she loves, her idiot boy.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And Betty sees the pony too:</l>
+          <l>Why stand you thus Good Betty Foy? </l>
+          <l>It is no goblin, ’tis no ghost,</l>
+          <l>’Tis he whom you so long have lost,</l>
+          <l>He whom you love, your idiot boy.</l>
+        </lg>
+        <lg type="stanza">
+          <l>She looks again—her arms are up—</l>
+          <l>She screams—she cannot move for joy; </l>
+          <l>She darts as with a torrent’s force,</l>
+          <l>She almost has o’erturned the horse, </l>
+          <l>And fast she holds her idiot boy.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_193.png" n="175"/>
+        <lg type="stanza">
+          <l>And Johnny burrs and laughs aloud, </l>
+          <l>Whether in cunning or in joy,</l>
+          <l>I cannot tell; but while he laughs, </l>
+          <l>Betty a drunken pleasure quaffs,</l>
+          <l>To hear again her idiot boy.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And now she’s at the pony’s tail,</l>
+          <l>And now she’s at the pony’s head,</l>
+          <l>On that side now, and now on this, </l>
+          <l>And almost stifled with her bliss,</l>
+          <l>A few sad tears does Betty shed.</l>
+        </lg>
+        <lg type="stanza">
+          <l>She kisses o’er and o’er again,</l>
+          <l>Him whom she loves, her idiot boy,</l>
+          <l>She’s happy here, she’s happy there, </l>
+          <l>She is uneasy every where;</l>
+          <l>Her limbs are all alive with joy.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_194.png" n="176"/>
+        <lg type="stanza">
+          <l>She pats the pony, where or when</l>
+          <l>She knows not, happy Betty Foy!</l>
+          <l>The little pony glad may be,</l>
+          <l>But he is milder far than she,</l>
+          <l>You hardly can perceive his joy.</l>
+        </lg>
+        <lg type="stanza">
+          <l>“Oh! Johnny, never mind the Doctor;</l>
+          <l>“You’ve done your best, and that is all." </l>
+          <l>She took the reins, when this was said, </l>
+          <l>And gently turned the pony’s head </l>
+          <l>From the loud water-fall.</l>
+        </lg>
+        <lg type="stanza">
+          <l>By this the stars were almost gone,</l>
+          <l>The moon was setting on the hill,</l>
+          <l>So pale you scarcely looked at her:</l>
+          <l>The little birds began to stir,</l>
+          <l>Though yet their tongues were still.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_195.png" n="177"/>
+        <lg type="stanza">
+          <l>The pony, Betty, and her boy,</l>
+          <l>Wind slowly through the woody dale: </l>
+          <l>And who is she, be-times abroad,</l>
+          <l>That hobbles up the steep rough road? </l>
+          <l>Who is it, but old Susan Gale?</l>
+        </lg>
+        <lg type="stanza">
+          <l>Long Susan lay deep lost in thought, </l>
+          <l>And many dreadful fears beset her,</l>
+          <l>Both for her messenger and nurse;</l>
+          <l>And as her mind grew worse and worse, </l>
+          <l>Her body it grew better.</l>
+        </lg>
+        <lg type="stanza">
+          <l>She turned, she toss’d herself in bed,</l>
+          <l>On all sides doubts and terrors met her; </l>
+          <l>Point after point did she discuss;</l>
+          <l>And while her mind was fighting thus, </l>
+          <l>Her body still grew better.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_196.png" n="178"/>
+        <lg type="stanza">
+          <l> "Alas! what is become of them?</l>
+          <l>"These fears can never be endured,</l>
+          <l>"I’ll to the wood."—The word scarce said, </l>
+          <l>Did Susan rise up from her bed,</l>
+          <l>As if by magic cured.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Away she posts up hill and down,</l>
+          <l>And to the wood at length is come,</l>
+          <l>She spies her friends, she shouts a greeting; </l>
+          <l>Oh me! it is a merry meeting,</l>
+          <l>As ever was in Christendom.</l>
+        </lg>
+        <lg type="stanza">
+          <l>The owls have hardly sung their last,</l>
+          <l>While our four travellers homeward wend;</l>
+          <l>The owls have hooted all night long,</l>
+          <l>And with the owls began my song,</l>
+          <l>And with the owls must end.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_197.png" n="179"/>
+        <lg type="stanza">
+          <l>For while they all were travelling home,</l>
+          <l>Cried Betty, “Tell us Johnny, do,</l>
+          <l>“Where all this long night you have been,</l>
+          <l>“What you have heard, what you have seen, </l>
+          <l>“And Johnny, mind you tell us true."</l>
+        </lg>
+        <lg type="stanza">
+          <l>Now Johnny all night long had heard</l>
+          <l>The owls in tuneful concert strive;</l>
+          <l>No doubt too he the moon had seen;</l>
+          <l>For in the moonlight he had been </l>
+          <l>From eight o’clock till five.</l>
+        </lg>
+        <lg type="stanza">
+          <l>And thus to Betty’s question, he </l>
+          <l>Made answer, like a traveller bold,</l>
+          <l>(His very words I give to you,)</l>
+          <l>“The cocks did crow to-whoo, to-whoo,</l>
+          <l>“And the sun did shine so cold."</l>
+          <l>—Thus answered Johnny in his glory,</l>
+          <l>And that was all his travel’s story.</l>
+        </lg>
+      </lg>
+    </body>
+  </text>
+</TEI>

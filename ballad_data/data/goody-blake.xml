@@ -1,0 +1,208 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Goody Blake and Harry Gill, A True Story</title>
+                <respStmt>
+                    <name>Allison Everitt Simmons</name>
+                    <resp>Transcribed by.</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <lg type="poem">
+                <pb facs="Wordsworth_1798_103.png"/>
+                <head rend="centre uppercase font-size(3mm)">
+                    GOODY BLAKE,
+                    <lb/>
+                    <hi rend="centre uppercase font-size(1.5mm)">AND</hi>
+                    <lb/>
+                    H A R R Y G I L L,
+                    <lb/>
+                    <title type="sub" rend="centre uppercase italics font-size(2mm)">A TRUE STORY.</title>
+                </head>
+                <figure type="double-line" rend="length(15mm)"/>
+                <lg type="stanza">
+                    <l>Oh! what's the matter? what's the matter?</l>
+                    <l>What is't that ails young Harry Gill ?</l>
+                    <l>That evermore his teeth they chatter,</l>
+                    <l>Chatter, chatter, chatter still.</l>
+                    <l>Of waistcoats Harry has no lack,</l>
+                    <l>Good duffle grey, and flannel fine ;</l>
+                    <l>He has a blanket on his back,</l>
+                    <l>And coats enough to smother nine.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_104.png" n="86"/>
+                <lg type="stanza">
+                    <l>In March, December, and in July,</l>
+                    <l>'Tis all the same with Harry Gill ;</l>
+                    <l>The neighbours tell, and tell you truly,</l>
+                    <l>His teeth they chatter, chatter still.</l>
+                    <l>At night, at morning, and at noon,</l>
+                    <l>'Tis all the same with Harry Gill ;</l>
+                    <l>Beneath the sun, beneath the moon,</l>
+                    <l>His teeth they chatter, chatter still.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Young Harry was a lusty drover,</l>
+                    <l>And who so stout of limb as he ?</l>
+                    <l>His cheeks were red as ruddy clover,</l>
+                    <l>His voice was like the voice of three.</l>
+                    <l>Auld Goody Blake was old and poor,</l>
+                    <l>Ill fed she was, and thinly clad ;</l>
+                    <l>And any man who pass’d her door,</l>
+                    <l>Might see how poor a hut she had.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_105.png" n="87"/>
+                <lg type="stanza">
+                    <l>All day she spun in her poor dwelling,</l>
+                    <l>And then her three hours’ work at night!</l>
+                    <l>Alas ! ’twas hardly worth the telling,</l>
+                    <l>It would not pay for candle-light.</l>
+                    <l>—This woman dwelt in Dorsetshire,</l>
+                    <l>Her hut was on a cold hill-side,</l>
+                    <l>And in that country coals are dear,</l>
+                    <l>For they come far by wind and tide.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>By the same fire to boil their pottage,</l>
+                    <l>Two poor old dames, as I have known,</l>
+                    <l>Will often live in one small cottage,</l>
+                    <l>But she, poor woman, dwelt alone.</l>
+                    <l>’Twas well enough when summer came,</l>
+                    <l>The long, warm, lightsome summer-day,</l>
+                    <l>Then at her door the canty dame</l>
+                    <l>Would sit, as any linnet gay.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_106.png" n="88"/>
+                <lg type="stanza">
+                    <l>But when the ice our streams did fetter,</l>
+                    <l>Oh ! then how her old bones would shake !</l>
+                    <l>You would have said, if you had met her,</l>
+                    <l>’Twas a hard time for Goody Blake.</l>
+                    <l>Her evenings then were dull and dead ;</l>
+                    <l>Sad case it was, as you may think,</l>
+                    <l>For very cold to go to bed,</l>
+                    <l>And then for cold not sleep a wink.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Oh joy for her ! when e’er in winter</l>
+                    <l>The winds at night had made a rout,</l>
+                    <l>And scatter'd many a lusty splinter.</l>
+                    <l>And many a rotten bough about.</l>
+                    <l>Yet never had she, well or sick,</l>
+                    <l>As every roan who knew her says,</l>
+                    <l>A pile before-hand, wood or stick,</l>
+                    <l>Enough to warm her for three days.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_107.png" n="89"/>
+                <lg type="stanza">
+                    <l>Now, when the frost was past enduring,</l>
+                    <l>And made her poor old bones to ache,</l>
+                    <l>Could any thing be more alluring,</l>
+                    <l>Than an old hedge to Goody Blake ?</l>
+                    <l>And now and then, it must be said,</l>
+                    <l>When her old bones were cold and chill,</l>
+                    <l>She left her fire, or left her bed,</l>
+                    <l>To seek the hedge of Harry Gill.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Now Harry he had long suspected</l>
+                    <l>This trespass of old Goody Blake,</l>
+                    <l>And vow’d that she. should be detected,</l>
+                    <l>And he on her would vengeance take.</l>
+                    <l>And oft from his warm fire he’d go,</l>
+                    <l>And to the fields his road would take,</l>
+                    <l>And there, at night, in frost and snow,</l>
+                    <l>He watch’d to seize old Goody Blake.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_108.png" n="90"/>
+                <lg type="stanza">
+                    <l>And once, behind a rick of barley,</l>
+                    <l>Thus looking out did Harry stand ;</l>
+                    <l>The moon was full and shining clearly,</l>
+                    <l>And crisp with frost the stubble-land.</l>
+                    <l>—He hears a noise—he’s all awake—</l>
+                    <l>Again—on tip-toe down the hill</l>
+                    <l>He softly creeps—'Tis Goody Blake,</l>
+                    <l>She's at the hedge of Harry Gill.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>Right glad was he when he beheld her :</l>
+                    <l>Stick after stick did Goody pull,</l>
+                    <l>He stood behind a bush of elder,</l>
+                    <l>Till she had filled her apron full.</l>
+                    <l>When with her load she turned about,</l>
+                    <l>The bye-road back again to take,</l>
+                    <l>He started forward with a shout,</l>
+                    <l>And sprang upon poor Goody Blake.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_109.png" n="91"/>
+                <lg type="stanza">
+                    <l>And fiercely by the arm he took her,</l>
+                    <l>And by the arm he held her fast,</l>
+                    <l>And fiercely by the arm he shook her,</l>
+                    <l>And cried, “ I’ve caught you then at last!”</l>
+                    <l>Then Goody, who had nothing said,</l>
+                    <l>Her bundle from her lap let fall ;</l>
+                    <l>And kneeling on the sticks, she pray’d</l>
+                    <l>To God that is the judge of all.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>She pray’d, her wither’d hand uprearing,</l>
+                    <l>While Harry held her by the arm—</l>
+                    <l>“ God ! who art never out of hearing,</l>
+                    <l>“ O may he never more be warm !”</l>
+                    <l>The cold, cold moon above her head,</l>
+                    <l>Thus on her knees did Goody pray,</l>
+                    <l>Young Harry heard what she had said,</l>
+                    <l>And icy-cold he turned away.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_110.png" n="92"/>
+                <lg type="stanza">
+                    <l>He went complaining all the morrow</l>
+                    <l>That he was cold and very chill:</l>
+                    <l>His face was gloom, his heart was sorrow,</l>
+                    <l>Alas! that day for Harry Gill !</l>
+                    <l>That day he wore a riding-coat,</l>
+                    <l>But not a whit the warmer he :</l>
+                    <l>Another was on Thursday brought,</l>
+                    <l>And ere the Sabbath he had three.</l>
+                </lg>
+                <lg type="stanza">
+                    <l>'Twas all in vain, a useless matter,</l>
+                    <l>And blankets were about him pinn’d ;</l>
+                    <l>Yet still his jaws and teeth they clatter,</l>
+                    <l>Like a loose casement in the wind.</l>
+                    <l>And Harry’s flesh it fell away;</l>
+                    <l>And all who see him say ’tis plain,</l>
+                    <l>That, live as long as live he may,</l>
+                    <l>He never will be warm again.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_111.png" n="93"/>
+                <lg type="stanza">
+                    <l>No word to any man he utters,</l>
+                    <l>A-bed or up, to young or old ;</l>
+                    <l>But ever to himself he mutters,</l>
+                    <l>“ Poor Harry Gill is very cold.”</l>
+                    <l>A-bed or up, by night or day ;</l>
+                    <l>His teeth they chatter, chatter still,</l>
+                    <l>Now think, ye farmers all, I pray,</l>
+                    <l>Of Goody Blake and Harry Gill.</l>
+                </lg>
+                <pb facs="Wordsworth_1798_112.png"/>
+            </lg>
+        </body>
+    </text>
+</TEI>
+

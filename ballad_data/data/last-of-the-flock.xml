@@ -1,0 +1,152 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Last of the Flock</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="Wordsworth_1798_151.png" n="133"/>
+            <head rend="centre uppercase font-size(1.5mm)">THE</head>
+            <head type="main" rend="centre uppercase font-size(3mm)">LAST OF THE FLOCK.</head>
+            <figure type="double-line" rend="length(15mm)"/>
+            <lg type="stanza">
+                <l>In distant countries I have been,</l>
+                <l>And yet I have not often seen</l>
+                <l>A healthy man, a man full grown,</l>
+                <l>Weep in the public roads alone.</l>
+                <l>But such a one, on English ground,</l>
+                <l>And in the broad high-way, 1 met;</l>
+                <l>Along the broad high-way he came,</l>
+                <l>His cheeks with tears were wet.</l>
+                <l>Sturdy he seemed, though he was sad;</l>
+                <l>And in his arms a lamb he had.</l>
+            </lg>
+            <pb facs="Wordsworth_1798_152.png" n="134"/>
+            <lg type="stanza">
+                <l>He saw me, and he turned aside,</l>
+                <l>As if he wished himself to hide :</l>
+                <l>Then with his coat he made essay</l>
+                <l>To wipe those briny tears away.</l>
+                <l>I follow’d him, and said, “ My friend</l>
+                <l>“ What ails you ? wherefore weep you so ?”</l>
+                <l>—“ Shame on me, Sir! this lusty lamb,</l>
+                <l>He makes my tears to flow.</l>
+                <l>To-day I fetched him from the rock;</l>
+                <l>He is the last of all my flock.</l>
+            </lg>
+            <lg type="stanza">
+                <l>When I was young, a single man,</l>
+                <l>And after youthful follies ran,</l>
+                <l>Though little given to care and thought,</l>
+                <l>Yet, so it was, a ewe I bought ;</l>
+                <l>And other sheep from her I raised,</l>
+                <l>As healthy sheep as you might see,</l>
+                <l>And then I married, and was rich</l>
+                <l>As I could wish to be;</l>
+                <l>Of sheep I number’d a full score,</l>
+                <l>And every year encreas’d my store.</l>
+            </lg>
+            <pb facs="Wordsworth_1798_153.png" n="135"/>
+            <lg type="stanza">
+                <l>Year after year my stock it grew,</l>
+                <l>And from this one, this single ewe,</l>
+                <l>Full fifty comely sheep I raised,</l>
+                <l>As sweet a flock as ever grazed !</l>
+                <l>Upon the mountain did they feed ;</l>
+                <l>They throve, and we at home did thrive.</l>
+                <l>—This lusty lamb of all my store</l>
+                <l>Is all that is alive :</l>
+                <l>And now I care not if we die,</l>
+                <l>And perish all of poverty.</l>
+            </lg>
+            <lg type="stanza">
+                <l>Ten children, Sir ! had I to feed,</l>
+                <l>Hard labour in a time of need !</l>
+                <l>My pride was tamed, and in our grief,</l>
+                <l>I of the parish ask’d relief.</l>
+                <l>They said I was a wealthy man;</l>
+                <l>My sheep upon the mountain fed,</l>
+                <l>And it was fit that thence I took</l>
+                <l>Whereof to buy us bread:</l>
+                <l>“ Do this; how can we give to you,"</l>
+                <l>They cried, “ what to the poor is due ?”</l>
+            </lg>
+            <pb facs="Wordsworth_1798_154.png" n="136"/>
+            <lg type="stanza">
+                <l>I sold a sheep as they had said,</l>
+                <l>And bought my little children bread,</l>
+                <l>And they were healthy with their food;</l>
+                <l>For me it never did me good.</l>
+                <l>A woeful time it was for me,</l>
+                <l>To see the end of all my gains,</l>
+                <l>The pretty flock which I had reared</l>
+                <l>With all my care and pains,</l>
+                <l>To see it melt like snow away!</l>
+                <l>For me it was a woeful day.</l>
+            </lg>
+            <lg type="stanza">
+                <l>Another still! and still another !</l>
+                <l>A little lamb, and then its mother !</l>
+                <l>It was a vein that never stopp'd,</l>
+                <l>Like blood-drops from my heart they dropp'd</l>
+                <l>Till thirty were not left alive</l>
+                <l>They dwindled, dwindled, one by one,</l>
+                <l>And I may say that many a time</l>
+                <l>I wished they all were gone:</l>
+                <l>They dwindled one by one away;</l>
+                <l>For me it was a woeful day.</l>
+            </lg>
+            <pb facs="Wordsworth_1798_155.png" n="137"/>
+            <lg type="stanza">
+                <l>To wicked deeds I was inclined,</l>
+                <l>And wicked fancies cross’d my mind,</l>
+                <l>And every man I chanc’d to see,</l>
+                <l>I thought he knew some ill of me.</l>
+                <l>No peace, no comfort could I find,</l>
+                <l>No ease, within doors or without,</l>
+                <l>And crazily, and wearily,</l>
+                <l>I went my work about.</l>
+                <l>Oft-times I thought to run away;</l>
+                <l>For me it was a woeful day.</l>
+            </lg>
+            <lg type="stanza">
+                <l>Sir! ‘twas a precious flock to me,</l>
+                <l>As dear as my own children be ;</l>
+                <l>For daily with my growing store</l>
+                <l>I loved my children more and more.</l>
+                <l>Alas! it was an evil time ;</l>
+                <l>God cursed me in my sore distress,</l>
+                <l>I prayed, yet every day I thought</l>
+                <l>I loved my children less;</l>
+                <l>And every week, and every day,</l>
+                <l>My flock, it seemed to melt away.</l>
+            </lg>
+            <pb facs="Wordsworth_1798_156.png" n="138"/>
+            <lg type="stanza">
+                <l>They dwindled, Sir, sad sight to see !</l>
+                <l>From ten to five, from five to three,</l>
+                <l>A lamb, a weather, and a ewe;</l>
+                <l>And then at last, from three to two;</l>
+                <l>And of my fifty, yesterday</l>
+                <l>I had but only one,</l>
+                <l>And here it lies upon my arm,</l>
+                <l>Alas! and I have none;</l>
+                <l>To-day I fetched it from the rock;</l>
+                <l>It is the last of all my flock.”</l>
+            </lg>
+         
+        </body>
+    </text>
+</TEI>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="22.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="\Qlyrical_ballads.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="lyrical_ballads.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>

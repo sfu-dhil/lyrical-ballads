@@ -1,0 +1,1101 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>The Rime of the Ancient Marinere, in Seven Parts</title>
+				<author>Coleridge</author>
+			</titleStmt>
+			<publicationStmt>
+				<p>Publication information</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Information about the source</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div>
+				<pb facs="Wordsworth_1798_017.png"/>
+				<head type="main" rend="centre uppercase font-size(3mm)"> THE RIME <lb/> OF THE
+					<lb/> ANCYENT MARINERE, <lb/>
+				</head>
+				<head type="sub" rend="centre uppercase"> IN SEVEN PARTS. <lb/>
+				</head>
+				<pb facs="Wordsworth_1798_018.png"/>
+				<pb facs="Wordsworth_1798_019.png"/>
+				<argument>
+					<head rend="centre uppercase italics font-size(3mm)">ARGUMENT.</head>
+					<p> How a Ship having passed the Line was driven by Storms to the cold Country
+						towards the South Pole ; and how from thence she made her course to the
+						tropical Latitude of the Great Pacific Ocean ; and of the strange things
+						that befell ; and in what manner the Ancyent Marinere came back to his own
+						Country. </p>
+				</argument>
+			</div>
+			<pb facs="Wordsworth_1798_020.png"/>
+			<div>
+				<!-- mj: what is the right thing to do here with the repeated title so it doesn't repeat? -->
+				<pb facs="Wordsworth_1798_021.png"/>
+				<head type="main" rend="centre uppercase font-size(3mm)"> THE RIME <lb/> OF THE
+					<lb/> ANCYENT MARINERE, <lb/>
+				</head>
+				<head type="sub" rend="centre uppercase"> IN SEVEN PARTS. <lb/>
+				</head>
+				<figure type="double-line" rend="length(15mm)"/>
+			</div>
+			<div>
+				<head rend="centre uppercase">I.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>It is an ancyent Marinere,</l>
+					<l rend="indent(5mm)">And he stoppeth one of three :</l>
+					<l>“By thy long grey beard and thy glittering eye</l>
+					<l rend="indent(5mm)">“Now wherefore stoppest me?</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ The Bridegroom’s doors are open’d wide</l>
+					<l rend="indent(5mm)">“ And I am next of kin ;</l>
+					<l>“ The Guests are met, the Feast is set,—</l>
+					<l rend="indent(5mm)">“ May’st hear the merry din.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_022.png" n="6"/>
+				<lg type="stanza">
+					<l>But still he holds the wedding-guest—</l>
+					<l rend="indent(5mm)">There was a Ship, quoth he—</l>
+					<l>“ Nay, if thou’st got a laughsome tale,</l>
+					<l rend="indent(5mm)">“ Marinere! come with me.”</l>
+				</lg>
+				<lg type="stanza">
+					<l>He holds him with his skinny hand,</l>
+					<l rend="indent(5mm)">Quoth he, there was a Ship—</l>
+					<l>“ Now get thee hence, thou grey-beard Loon ! "</l>
+					<l rend="indent(5mm)">Or my Staff shall make thee skip.</l>
+				</lg>
+				<lg type="stanza">
+					<l>He holds him with his glittering eye—</l>
+					<l rend="indent(5mm)">The wedding guest stood still</l>
+					<l>And listens like a three year’s child ;</l>
+					<l rend="indent(5mm)">The Marinere hath his will.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The wedding-guest sate on a stone,</l>
+					<l rend="indent(5mm)">He cannot chuse but hear :</l>
+					<l>And thus spake on that ancyent man,</l>
+					<l rend="indent(5mm)">The bright-eyed Marinere.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_023.png" n="7"/>
+				<lg type="stanza">
+					<l>The Ship was cheer’d, the Harbour clear’d—</l>
+					<l rend="indent(5mm)">Merrily did we drop</l>
+					<l>Below the Kirk, below the Hill,</l>
+					<l rend="indent(5mm)">Below the Light-house top.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The Sun came up upon the left,</l>
+					<l rend="indent(5mm)">Out of the Sea came he :</l>
+					<l>And he shone bright, and on the right</l>
+					<l rend="indent(5mm)">Went down into the Sea.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Higher and higher every day,</l>
+					<l rend="indent(5mm)">Till over the mast at noon—</l>
+					<l>The wedding-guest here beat his breast,</l>
+					<l rend="indent(5mm)">For he heard the loud bassoon.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The Bride hath pac’d into the Hall,</l>
+					<l rend="indent(5mm)">Red as a rose is she ;</l>
+					<l>Nodding their heads before her goes</l>
+					<l rend="indent(5mm)">The merry Minstralsy.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_024.png" n="8"/>
+				<lg type="stanza">
+					<l>The wedding-guest he beat his breast,</l>
+					<l rend="indent(5mm)">Yet he cannot chuse but hear :</l>
+					<l>And thus spake on that ancyent Man,</l>
+					<l rend="indent(5mm)">The bright-eyed Marinere.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Listen, Stranger ! Storm and Wind,</l>
+					<l rend="indent(5mm)">A Wind and Tempest strong !</l>
+					<l>For days and weeks it play’d us freaks—</l>
+					<l rend="indent(5mm)">Like Chaff we drove along.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Listen, Stranger ! Mist and Snow,</l>
+					<l rend="indent(5mm)">And it grew wond’rous cauld :</l>
+					<l>And Ice mast-high came floating by</l>
+					<l rend="indent(5mm)">As green as Emerauld.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And thro’ the drifts the snowy clifts</l>
+					<l rend="indent(5mm)">Did send a dismal sheen ;</l>
+					<l>Ne shapes of men ne beasts we ken—</l>
+					<l rend="indent(5mm)">The Ice was all between.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_025.png" n="9"/>
+				<lg type="stanza">
+					<l>The Ice was here, the Ice was there,</l>
+					<l rend="indent(5mm)">The Ice was all around :</l>
+					<l>It crack’d and growl’d, and roar’d and howl’d—</l>
+					<l rend="indent(5mm)">Like noises of a swound.</l>
+				</lg>
+				<lg type="stanza">
+					<l>At length did cross an Albatross,</l>
+					<l rend="indent(5mm)">Thorough the Fog it came ;</l>
+					<l>And an it were a Christian Soul,</l>
+					<l rend="indent(5mm)">We hail’d it in God’s name.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The Marineres gave it biscuit-worms,</l>
+					<l rend="indent(5mm)">And round and round it flew :</l>
+					<l>The Ice did split with a Thunder-fit ;</l>
+					<l rend="indent(5mm)">The Helmsman steer’d us thro’.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And a good south wind sprung up behind,</l>
+					<l rend="indent(5mm)">The Albatross did follow ;</l>
+					<l>And every day for food or play</l>
+					<l rend="indent(5mm)">Came to the Marinere’s hollo !</l>
+				</lg>
+				<pb facs="Wordsworth_1798_026.png" n="10"/>
+				<lg type="stanza">
+					<l>In mist or cloud on mast or shroud</l>
+					<l rend="indent(5mm)">It perch’d for vespers nine,</l>
+					<l>Whiles all the night thro’ fog smoke-white</l>
+					<l rend="indent(5mm)">Glimmer’d the white moon-shine.</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ God save thee, ancyent Marinere !</l>
+					<l rend="indent(5mm)">“ From the fiends that plague thee thus—</l>
+					<l>“ Why look’s! thou so ?”—with my cross bow</l>
+					<l rend="indent(5mm)">I shot the Albatross.</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_027.png" n="11"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">II.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>The Sun came up upon the right,</l>
+					<l rend="indent(5mm)">Out of the Sea came he ;</l>
+					<l>And broad as a weft upon the left</l>
+					<l rend="indent(5mm)">Went down into the Sea.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And the good south wind still blew behind,</l>
+					<l rend="indent(5mm)">But no sweet Bird did follow</l>
+					<l>Ne any day for food or play</l>
+					<l rend="indent(5mm)">Came to the Marinere’s hollo !</l>
+				</lg>
+				<lg type="stanza">
+					<l>And I had done an hellish thing</l>
+					<l rend="indent(5mm)">And it would work ’em woe :</l>
+					<l>For all averr’d, I had kill’d the Bird</l>
+					<l rend="indent(5mm)">That made the Breeze to blow.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_028.png" n="12"/>
+				<lg type="stanza">
+					<l>Ne dim ne red, like God’s own head,</l>
+					<l rend="indent(5mm)">The glorious Sun uprist :</l>
+					<l>Then all averr’d, I had kill’d the Bird</l>
+					<l rend="indent(5mm)">That brought the fog and mist.</l>
+					<l>‘Twas right, said they, such birds to slay</l>
+					<l rend="indent(5mm)">That bring the fog and mist.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The breezes blew, the white foam flew;</l>
+					<l rend="indent(5mm)">The furrow follow’d free :</l>
+					<l>We were the first that ever burst</l>
+					<l rend="indent(5mm)">Into that silent Sea.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Down dropt the breeze, the Sails dropt down,</l>
+					<l rend="indent(5mm)">‘Twas sad as sad could be</l>
+					<l>And we did speak only to break</l>
+					<l rend="indent(5mm)">The silence of the Sea.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_029.png" n="13"/>
+				<lg type="stanza">
+					<l>All in a hot and copper sky</l>
+					<l rend="indent(5mm)">The bloody sun at noon,</l>
+					<l>Right up above the mast did stand,</l>
+					<l rend="indent(5mm)">No bigger than the moon.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Day after day, day after day,</l>
+					<l rend="indent(5mm)">We stuck, ne breath ne motion,</l>
+					<l>As idle as a painted Ship</l>
+					<l rend="indent(5mm)">Upon a painted Ocean.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Water, water, every where,</l>
+					<l rend="indent(5mm)">And all the boards did shrink ;</l>
+					<l>Water, water, every where,</l>
+					<l rend="indent(5mm)">Ne any drop to drink.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The very deeps did rot : O Christ !</l>
+					<l rend="indent(5mm)">That ever this should be !</l>
+					<l>Yea, slimy things did crawl-with legs</l>
+					<l rend="indent(5mm)">Upon the slimy Sea.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_030.png" n="14"/>
+				<lg type="stanza">
+					<l>About, about, in reel and rout</l>
+					<l rend="indent(5mm)">The Death-fires danc’d at night;</l>
+					<l>The water, like a witch’s oils,</l>
+					<l rend="indent(5mm)">Burnt green and blue and white.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And some in dreams assured were</l>
+					<l rend="indent(5mm)">Of the Spirit that plagued us so :</l>
+					<l>Nine fathom deep he had follow’d us</l>
+					<l rend="indent(5mm)">From the Land of Mist and Snow.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And every tongue thro’ utter drouth</l>
+					<l rend="indent(5mm)">Was wither’d at the root ;</l>
+					<l>We could not speak no more than if</l>
+					<l rend="indent(5mm)">We had been choked with soot.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Ah wel-a-day ! what evil looks</l>
+					<l rend="indent(5mm)">Had I from old and young ;</l>
+					<l>Instead of the Cross the Albatross</l>
+					<l rend="indent(5mm)">About my neck was hung.</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_031.png" n="15"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">III.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>I saw a something in the Sky</l>
+					<l rend="indent(5mm)">No bigger than my fist ;</l>
+					<l>At first it seem’d a little speck</l>
+					<l rend="indent(5mm)">And then it seem’d a mist :</l>
+					<l>It mov’d and mov’d, and took at last</l>
+					<l rend="indent(5mm)">A certain shape, I wist.</l>
+				</lg>
+				<lg type="stanza">
+					<l>A speck, a mist, a shape, I wist !</l>
+					<l rend="indent(5mm)">And still it ner’d and ner’d ;</l>
+					<l>And, an it dodg’d a water-sprite,</l>
+					<l rend="indent(5mm)">It plung’d and tack’d and veer’d.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_032.png" n="16"/>
+				<lg type="stanza">
+					<l>With throat unslack’d, with black lips bak’d</l>
+					<l rend="indent(5mm)">Ne could we laugh, ne wail :</l>
+					<l>Then while thro’ drouth all dumb they stood</l>
+					<l>I bit my arm and suck’d the blood</l>
+					<l rend="indent(5mm)">And cry’d, A sail ! a sail !</l>
+				</lg>
+				<lg type="stanza">
+					<l>With throat unslack’d, with black lips bak’d</l>
+					<l rend="indent(5mm)">Agape they heard me call:</l>
+					<l>Gramercy ! they for joy did grin</l>
+					<l>And all at once their breath drew in</l>
+					<l rend="indent(5mm)">As they were drinking all.</l>
+				</lg>
+				<lg type="stanza">
+					<l>She doth not tack from side to side—</l>
+					<l rend="indent(5mm)">Hither to work us weal</l>
+					<l>Withouten wind, withouten tide</l>
+					<l rend="indent(5mm)">She steddies with upright keel.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_033.png" n="17"/>
+				<lg type="stanza">
+					<l>The western wave was all a flame,</l>
+					<l rend="indent(5mm)">The day was well nigh done !</l>
+					<l>Almost upon the western wave</l>
+					<l rend="indent(5mm)">Rested the broad bright Sun ;</l>
+					<l>When that strange shape drove suddenly</l>
+					<l rend="indent(5mm)">Betwixt us and the Sun.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And strait the Sun was fleck’d with bars</l>
+					<l rend="indent(5mm)">(Heaven’s mother send us grace)</l>
+					<l>As if thro’ a dungeon grate he peer’d</l>
+					<l rend="indent(5mm)">With broad and burning face.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Alas ! (thought I, and my heart beat loud)</l>
+					<l rend="indent(5mm)">How fast she neres and neres !</l>
+					<l>Are those her Sails that glance in the Sun</l>
+					<l rend="indent(5mm)">Like restless gossameres ?</l>
+				</lg>
+				<pb facs="Wordsworth_1798_034.png" n="18"/>
+				<lg type="stanza">
+					<l> Are those <emph>her</emph> naked ribs, which fleck’d </l>
+					<l rend="indent(5mm)">The sun that did behind them peer ?</l>
+					<l>And are those two all, all the crew,</l>
+					<l rend="indent(5mm)">That woman and her fleshless Pheere ?</l>
+				</lg>
+				<lg type="stanza">
+					<l>
+						<emph>His</emph> bones were black with many a crack, </l>
+					<l rend="indent(5mm)">All black and bare, I ween ;</l>
+					<l>Jet-black and bare, save where with rust</l>
+					<l>Of mouldy damps and charnel crust</l>
+					<l rend="indent(5mm)">They’re patch’d with purple and green.</l>
+				</lg>
+				<lg type="stanza">
+					<l>
+						<emph>Her</emph> lips are red, <emph>her</emph> looks are free, </l>
+					<l rend="indent(5mm)">
+						<emph>Her</emph> locks are yellow as gold : </l>
+					<l>Her skin is as white as leprosy,</l>
+					<l>And she is far liker Death than he ;</l>
+					<l rend="indent(5mm)">Her flesh makes the still air cold.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_035.png" n="19"/>
+				<lg type="stanza">
+					<l>The naked Hulk alongside came</l>
+					<l rend="indent(5mm)">And the Twain were playing dice ;</l>
+					<l>“ The Game is done ! I’ve won, I’ve won !”</l>
+					<l rend="indent(5mm)">Quoth she, and whistled thrice.</l>
+				</lg>
+				<lg type="stanza">
+					<l>A gust of wind sterte up behind</l>
+					<l rend="indent(5mm)">And whistled thro’ his bones ;</l>
+					<l> Thro’ the holes of his eyes and the hole of his mouth </l>
+					<l rend="indent(5mm)">Half-whistles and half-groans.</l>
+				</lg>
+				<lg type="stanza">
+					<l>With never a whisper in the Sea</l>
+					<l rend="indent(5mm)">Off darts the Spectre-ship;</l>
+					<l>While clombe above the Eastern bar</l>
+					<l>The horned Moon, with one bright Star</l>
+					<l rend="indent(5mm)">Almost atween the tips.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_036.png" n="20"/>
+				<lg type="stanza">
+					<l>One after one by the horned Moon</l>
+					<l rend="indent(5mm)">(Listen, O Stranger ! to me)</l>
+					<l>Each turn’d his face with a ghastly pang</l>
+					<l rend="indent(5mm)">And curs’d me with his ee.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Four times fifty living men,</l>
+					<l rend="indent(5mm)">With never a sigh or groan.</l>
+					<l>With heavy thump, a lifeless lump</l>
+					<l rend="indent(5mm)">They dropp’d down one by one.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Their souls did from their bodies fly,—</l>
+					<l rend="indent(5mm)">They fled to bliss or woe ;</l>
+					<l>And every soul it pass’d me by,</l>
+					<l rend="indent(5mm)">Like the whiz of my Cross-bow,</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_037.png" n="21"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">IV.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>” I fear thee, ancyent Marinere !</l>
+					<l rend="indent(5mm)">“ I fear thy skinny hand ;</l>
+					<l>“ And thou art long and lank and brown</l>
+					<l rend="indent(5mm)">“ As is the ribb’d Sea-sand.</l>
+				</lg>
+				<lg type="stanza">
+					<l>” I fear thee and thy glittering eye</l>
+					<l rend="indent(5mm)">“ And thy skinny hand so brown—</l>
+					<l>Fear not, fear not, thou wedding guest!</l>
+					<l rend="indent(5mm)">This body dropt not down.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Alone, alone, all all alone</l>
+					<l rend="indent(5mm)">Alone on the wide wide Sea;</l>
+					<l>And Christ would take no pity on</l>
+					<l rend="indent(5mm)">My soul in agony.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_038.png" n="22"/>
+				<lg type="stanza">
+					<l>The many men so beautiful,</l>
+					<l rend="indent(5mm)">And they all dead did lie !</l>
+					<l>And a million million slimy things</l>
+					<l rend="indent(5mm)">Liv’d on—and so did I.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I look’d upon the rotting Sea,</l>
+					<l rend="indent(5mm)">And drew my eyes away ;</l>
+					<l>I look’d upon the eldritch deck,</l>
+					<l rend="indent(5mm)">And there the dead men lay.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I look’d to Heaven, and try’d to pray ;</l>
+					<l rend="indent(5mm)">But or ever a prayer had gusht,</l>
+					<l>A wicked whisper came and made</l>
+					<l rend="indent(5mm)">My heart as dry as dust.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I clos’d my lids and kept them close,</l>
+					<l rend="indent(5mm)">Till the balls like pulses beat;</l>
+					<l>For the sky and the sea, and the sea and the sky</l>
+					<l>Lay like a load on my weary eye,</l>
+					<l rend="indent(5mm)">And the dead were at my feet.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_039.png" n="23"/>
+				<lg type="stanza">
+					<l>The cold sweat melted from their limbs,</l>
+					<l rend="indent(5mm)">Ne rot, ne reek did they ;</l>
+					<l>The look with which they look’d on me,</l>
+					<l rend="indent(5mm)">Had never pass’d away.</l>
+				</lg>
+				<lg type="stanza">
+					<l>An orphan’s curse would drag to Hell</l>
+					<l rend="indent(5mm)">A spirit from on high :</l>
+					<l>But O ! more horrible than that</l>
+					<l rend="indent(5mm)">Is the curse in a dead man’s eye !</l>
+					<l>Seven days, seven nights I saw that curse,</l>
+					<l rend="indent(5mm)">And yet I could not die.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The moving Moon went up the sky</l>
+					<l rend="indent(5mm)">And no where did abide :</l>
+					<l>Softly she was going up</l>
+					<l rend="indent(5mm)">And a star or two beside—</l>
+				</lg>
+				<pb facs="Wordsworth_1798_040.png" n="24"/>
+				<lg type="stanza">
+					<l>Her beams bemock’d the sultry main</l>
+					<l rend="indent(5mm)">Like morning frosts yspread ;</l>
+					<l>But where the ship’s huge shadow lay,</l>
+					<l>The charmed water burnt alway</l>
+					<l rend="indent(5mm)">A still and awful red.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Beyond the shadow of the ship</l>
+					<l rend="indent(5mm)">I watch’d the water-snakes:</l>
+					<l>They mov’d in tracks of shining white ;</l>
+					<l>And when they rear’d, the elfish light</l>
+					<l rend="indent(5mm)">Fell off in hoary flakes.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Within the shadow of the ship</l>
+					<l rend="indent(5mm)">I watch’d their rich attire :</l>
+					<l>Blue, glossy green, and velvet black</l>
+					<l>They coil’d and swam; and every track</l>
+					<l rend="indent(5mm)">Was a flash of golden fire.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_041.png" n="25"/>
+				<lg type="stanza">
+					<l>O happy living things! no tongue</l>
+					<l rend="indent(5mm)">Their beauty might declare :</l>
+					<l>A spring of love gusht from my heart,</l>
+					<l rend="indent(5mm)">And I bless’d them unaware !</l>
+					<l>Sure my kind saint took pity on me,</l>
+					<l rend="indent(5mm)">And I bless’d them unaware.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The self-same moment I could pray ;</l>
+					<l rend="indent(5mm)">And from my neck so free</l>
+					<l>The Albatross fell off, and sank</l>
+					<l rend="indent(5mm)">Like lead into the sea.</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_042.png" n="26"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">V.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>O sleep, it is a gentle thing</l>
+					<l rend="indent(5mm)">Belov’d from pole to pole !</l>
+					<l>To Mary-queen the praise be yeven</l>
+					<l>She sent the gentle sleep from heaven</l>
+					<l rend="indent(5mm)">That slid into my soul.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The silly buckets on the deck</l>
+					<l rend="indent(5mm)">That had so long remain’d,</l>
+					<l>I dreamt that they were fill’d with dew</l>
+					<l rend="indent(5mm)">And when I awoke it rain’d.</l>
+				</lg>
+				<lg type="stanza">
+					<l>My lips were wet, my throat was cold,</l>
+					<l rend="indent(5mm)">My garments all were dank ;</l>
+					<l>Sure I had drunken in my dreams</l>
+					<l rend="indent(5mm)">And still my body drank.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_043.png" n="27"/>
+				<lg type="stanza">
+					<l>I mov’d and could not feel my limbs,</l>
+					<l rend="indent(5mm)">I was so light, almost</l>
+					<l>I thought that I had died in sleep,</l>
+					<l rend="indent(5mm)">And was a blessed Ghost.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The roaring wind ! it roar’d far off,</l>
+					<l rend="indent(5mm)">It did not come anear ;</l>
+					<l>But with its sound it shook the sails</l>
+					<l rend="indent(5mm)">That were so thin and sere.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The upper air bursts into life,</l>
+					<l rend="indent(5mm)">And a hundred fire-flags sheen</l>
+					<l>To and fro they are hurried about;</l>
+					<l>And to and fro, and in and out</l>
+					<l rend="indent(5mm)">The stars dance on between.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The coming wind doth roar more loud ;</l>
+					<l rend="indent(5mm)">The sails do sigh, like sedge:</l>
+					<l>The rain pours down from one black cloud</l>
+					<l rend="indent(5mm)">And the Moon is at its edge.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_044.png" n="28"/>
+				<lg type="stanza">
+					<l>Hark ! hark ! the thick black cloud is cleft,</l>
+					<l rend="indent(5mm)">And the Moon is at its side :</l>
+					<l>Like waters shot from some high crag,</l>
+					<l>The lightning falls with never a jag</l>
+					<l rend="indent(5mm)">A river steep and wide.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The strong wind reach’d the ship : it roar’d</l>
+					<l rend="indent(5mm)">And dropp’d down, like a stone !</l>
+					<l>Beneath the lightning and the moon</l>
+					<l rend="indent(5mm)">The dead men gave a groan.</l>
+				</lg>
+				<lg type="stanza">
+					<l>They groan’d, they stirr’d, they all uprose,</l>
+					<l rend="indent(5mm)">Ne spake, ne mov’d their eyes :</l>
+					<l>It had been strange, even in a dream</l>
+					<l rend="indent(5mm)">To have seen those dead men rise.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The helmsman steerd, the ship mov’d on ;</l>
+					<l rend="indent(5mm)">Yet never a breeze up-blew ;</l>
+					<l>The Marineres all ’gan work the ropes,</l>
+					<l rend="indent(5mm)">Where they were wont to do :</l>
+					<pb facs="Wordsworth_1798_045.png" n="29"/>
+					<l>They rais’d their limbs like lifeless tools—</l>
+					<l rend="indent(5mm)">We were a ghastly crew.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The body of my brother’s son</l>
+					<l rend="indent(5mm)">Stood by me knee to knee :</l>
+					<l>The body and I pull’d at one rope,</l>
+					<l rend="indent(5mm)">But he said nought to me—</l>
+					<l>And I quak’d to think of my own voice</l>
+					<l rend="indent(5mm)">How frightful it would be !</l>
+				</lg>
+				<lg type="stanza">
+					<l>The day-light dawn’d—they dropp’d their arms,</l>
+					<l rend="indent(5mm)">And cluster’d round the mast:</l>
+					<l>Sweet sounds rose slowly thro’ their mouths</l>
+					<l rend="indent(5mm)">And from their bodies pass’d.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Around, around, flew each sweet sound,</l>
+					<l rend="indent(5mm)">Then darted to the sun :</l>
+					<l>Slowly the sounds came back again</l>
+					<l rend="indent(5mm)">Now mix’d, now one by one.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_046.png" n="30"/>
+				<lg type="stanza">
+					<l>Sometimes a dropping from the sky</l>
+					<l rend="indent(5mm)">I heard the Lavrock sing ;</l>
+					<l>Sometimes all little birds that are</l>
+					<l>How they seem’d to fill the sea and air</l>
+					<l rend="indent(5mm)">With their sweet jargoning,</l>
+				</lg>
+				<lg type="stanza">
+					<l>And now ’twas like all instruments,</l>
+					<l rend="indent(5mm)">Now like a lonely flute ;</l>
+					<l>And now it is an angel’s song</l>
+					<l rend="indent(5mm)">That makes the heavens be mute.</l>
+				</lg>
+				<lg type="stanza">
+					<l>It ceas’d : yet still the sails made on</l>
+					<l rend="indent(5mm)">A pleasant noise till noon,</l>
+					<l>A noise like of a hidden brook</l>
+					<l rend="indent(5mm)">In the leafy month of June,</l>
+					<l>That to the sleeping woods all night</l>
+					<l rend="indent(5mm)">Singeth a quiet tune.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_047.png" n="31"/>
+				<lg type="stanza">
+					<l>Listen, O listen, thou Wedding-guest!</l>
+					<l rend="indent(5mm)">“ Marinere ! thou hast thy will:</l>
+					<l> “ For that, which comes out of thine eye, doth make </l>
+					<l rend="indent(5mm)">“ My body and soul to be still.”</l>
+				</lg>
+				<lg type="stanza">
+					<l>Never sadder tale was told</l>
+					<l rend="indent(5mm)">To a man of woman born :</l>
+					<l>Sadder and wiser thou wedding-guest!</l>
+					<l rend="indent(5mm)">Thou’lt rise to morrow morn.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Never sadder tale was heard</l>
+					<l rend="indent(5mm)">By a man of woman born :</l>
+					<l>The Marineres all return’d to work</l>
+					<l rend="indent(5mm)">As silent as beforne.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The Marineres all ’gan pull the ropes,</l>
+					<l rend="indent(5mm)">But look at me they n’old :</l>
+					<l>Thought I, I am as thin as air—</l>
+					<l rend="indent(5mm)">They cannot me behold.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_048.png" n="32"/>
+				<lg type="stanza">
+					<l>Till noon we silently sail’d on</l>
+					<l rend="indent(5mm)">Yet never a breeze did breathe :</l>
+					<l>Slowly and smoothly went the ship</l>
+					<l rend="indent(5mm)">Mov’d onward from beneath.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Under the keel nine fathom deep</l>
+					<l rend="indent(5mm)">From the land of mist and snow</l>
+					<l>The spirit slid : and it was He</l>
+					<l rend="indent(5mm)">That made the Ship to go.</l>
+					<l>The sails at noon left off their tune</l>
+					<l rend="indent(5mm)">And the Ship stood still also.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The sun right up above the mast</l>
+					<l rend="indent(5mm)">Had fix’d her to the ocean :</l>
+					<l>But in a minute she ’gan stir</l>
+					<l rend="indent(5mm)">With a short uneasy motion—</l>
+					<l>Backwards and forwards half her length</l>
+					<l rend="indent(5mm)">With a short uneasy motion.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_049.png" n="33"/>
+				<lg type="stanza">
+					<l>Then, like a pawing horse let go,</l>
+					<l rend="indent(5mm)">She made a sudden bound :</l>
+					<l>It flung the blood into my head,</l>
+					<l rend="indent(5mm)">And I fell into a swound.</l>
+				</lg>
+				<lg type="stanza">
+					<l>How long in that same fit I lay,</l>
+					<l rend="indent(5mm)">I have not to declare ;</l>
+					<l>But ere my living life return’d,</l>
+					<l>I heard and in my soul discern’d</l>
+					<l rend="indent(5mm)">Two voices in the air,</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ Is it he ? quoth one, “ Is this the man ?</l>
+					<l rend="indent(5mm)">“ By him who died on cross,</l>
+					<l>“ With his cruel bow he lay’d full low</l>
+					<l rend="indent(5mm)">“ The harmless Albatross.</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ The spirit who ‘bideth by himself</l>
+					<l rend="indent(5mm)">“ In the land of mist and snow,</l>
+					<l>“ He lov’d the bird that lov’d the man</l>
+					<l rend="indent(5mm)">“ Who shot him with his bow.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_050.png" n="34"/>
+				<lg type="stanza">
+					<l>The other was a softer voice,</l>
+					<l rend="indent(5mm)">As soft as honey-dew :</l>
+					<l>Quoth he the man hath penance done,</l>
+					<l rend="indent(5mm)">And penance more will do.</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_051.png" n="35"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">VI.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<head rend="centre uppercase">FIRST VOICE.</head>
+					<l>“ But tell me, tell me ! speak again,</l>
+					<l rend="indent(5mm)">“ Thy soft response renewing—</l>
+					<l>“ What makes that ship drive on so fast ?</l>
+					<l rend="indent(5mm)">“ What is the Ocean doing ?</l>
+				</lg>
+				<lg type="stanza">
+					<head rend="centre uppercase">SECOND VOICE.</head>
+					<l>“ Still as a Slave before his Lord,</l>
+					<l rend="indent(5mm)">“ The Ocean hath no blast :</l>
+					<l>“ His great bright eye most silently</l>
+					<l rend="indent(5mm)">“ Up to the moon is cast—</l>
+				</lg>
+				<pb facs="Wordsworth_1798_052.png" n="36"/>
+				<lg type="stanza">
+					<l>“ If he may know which way to go,</l>
+					<l rend="indent(5mm)">“ For the guides him smooth or grim.</l>
+					<l>“ See, brother, see ! how graciously</l>
+					<l rend="indent(5mm)">“ She looketh down on him.</l>
+				</lg>
+				<lg type="stanza">
+					<head rend="centre uppercase">FIRST VOICE.</head>
+					<l>“ But why drives on that ship so fast</l>
+					<l rend="indent(5mm)">“ Withouten wave or wind ?</l>
+				</lg>
+				<lg type="stanza">
+					<head rend="centre uppercase">SECOND VOICE.</head>
+					<l>“ The air is cut away before,</l>
+					<l rend="indent(5mm)">“ And closes from behind.</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ Fly, brother, fly ! more high, more high,</l>
+					<l rend="indent(5mm)">“ Or we shall be belated :</l>
+					<l>“ For slow and slow that ship will go,</l>
+					<l rend="indent(5mm)">“ When the Marinere’s trance is abated.’’</l>
+				</lg>
+				<pb facs="Wordsworth_1798_053.png" n="37"/>
+				<lg type="stanza">
+					<l>I woke, and we were sailing on</l>
+					<l rend="indent(5mm)">As in a gentle weather :</l>
+					<l>’Twas night, calm night, the moon was high</l>
+					<l rend="indent(5mm)">The dead men stood together.</l>
+				</lg>
+				<lg type="stanza">
+					<l>All stood together on the deck,</l>
+					<l rend="indent(5mm)">For a charnel-dungeon fitter :</l>
+					<l>All fix’d on me their stony eyes</l>
+					<l rend="indent(5mm)">That in the moon did glitter.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The pang, the curse, with which they died,</l>
+					<l rend="indent(5mm)">Had never pass’d away :</l>
+					<l>I could not draw my een from theirs</l>
+					<l rend="indent(5mm)">Ne turn them up to pray.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And in its time the spell was snapt,</l>
+					<l rend="indent(5mm)">And I could move my een :</l>
+					<l>I look’d far-forth, but little saw</l>
+					<l rend="indent(5mm)">Of what might else be seem</l>
+				</lg>
+				<pb facs="Wordsworth_1798_054.png" n="38"/>
+				<lg type="stanza">
+					<l>Like one, that on a lonely road</l>
+					<l rend="indent(5mm)">Doth walk in fear and dread,</l>
+					<l>And having once turn’d round, walks on</l>
+					<l rend="indent(5mm)">And turns no more his head :</l>
+					<l>Because he knows, a frightful fiend</l>
+					<l rend="indent(5mm)">Doth close behind him tread.</l>
+				</lg>
+				<lg type="stanza">
+					<l>But soon there breath’d a wind on me,</l>
+					<l rend="indent(5mm)">Ne sound ne motion made :</l>
+					<l>Its path was not upon the sea</l>
+					<l rend="indent(5mm)">In ripple or in shade.</l>
+				</lg>
+				<lg type="stanza">
+					<l>It rais’d my hair, it fann’d my cheek,</l>
+					<l rend="indent(5mm)">Like a meadow-gale of spring—</l>
+					<l>It mingled strangely with my fears,</l>
+					<l rend="indent(5mm)">Yet it felt like a welcoming.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_055.png" n="39"/>
+				<lg type="stanza">
+					<l>Swiftly, swiftly flew the ship,</l>
+					<l rend="indent(5mm)">Yet she sail’d softly too :</l>
+					<l>Sweetly, sweetly blew the breeze—</l>
+					<l rend="indent(5mm)">On me alone it blew.</l>
+				</lg>
+				<lg type="stanza">
+					<l>O dream of joy ! is this indeed</l>
+					<l rend="indent(5mm)">The light-house top I see ?</l>
+					<l>Is this the Hill ? Is this the Kirk ?</l>
+					<l rend="indent(5mm)">Is this mine own countrée ?</l>
+				</lg>
+				<lg type="stanza">
+					<l>We drifted o’er the Harbour-bar,</l>
+					<l rend="indent(5mm)">And I with sobs did pray—</l>
+					<l>“ O let me be awake, my God !</l>
+					<l rend="indent(5mm)">“ Or let me sleep alway !”</l>
+				</lg>
+				<lg type="stanza">
+					<l>The harbour-bay was clear as glass,</l>
+					<l rend="indent(5mm)">So smoothly it was strewn !</l>
+					<l>And on the bay the moon light lay,</l>
+					<l rend="indent(5mm)">And the shadow of the moon.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_056.png" n="40"/>
+				<lg type="stanza">
+					<l>The moonlight bay was white all o’er,</l>
+					<l rend="indent(5mm)">Till rising from the same.</l>
+					<l>Full many shapes, that shadows were,</l>
+					<l rend="indent(5mm)">Like as of torches came.</l>
+				</lg>
+				<lg type="stanza">
+					<l>A little distance from the prow</l>
+					<l rend="indent(5mm)">Those dark-red shadows were ;</l>
+					<l>But soon I saw that my own flesh</l>
+					<l rend="indent(5mm)">Was red as in a glare.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I turn’d my head in fear and dread,</l>
+					<l rend="indent(5mm)">And by the holy rood,</l>
+					<l>The bodies had advanc’d, and now</l>
+					<l rend="indent(5mm)">Before the mast they stood.</l>
+				</lg>
+				<lg type="stanza">
+					<l>They lifted up their stiff right arms,</l>
+					<l rend="indent(5mm)">They held them strait and tight ;</l>
+					<l>And each right-arm burnt like a torch</l>
+					<l rend="indent(5mm)">A torch that’s borne upright.</l>
+					<l>Their stony eye-balls glitter’d on</l>
+					<l rend="indent(5mm)">In the red and smoky light.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_057.png" n="41"/>
+				<lg type="stanza">
+					<l>I pray’d and turn’d my head away</l>
+					<l rend="indent(5mm)">Forth looking as before.</l>
+					<l>There was no breeze upon the bay,</l>
+					<l rend="indent(5mm)">No wave against the shore.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The rock shone bright, the kirk no less</l>
+					<l rend="indent(5mm)">That stands above the rock :</l>
+					<l>The moonlight steep’d in silentness</l>
+					<l rend="indent(5mm)">The steady weathercock.</l>
+				</lg>
+				<lg type="stanza">
+					<l>And the bay was white with silent light,</l>
+					<l rend="indent(5mm)">Till rising from the same</l>
+					<l>Full many shapes, that shadows were,</l>
+					<l rend="indent(5mm)">In crimson colours came.</l>
+				</lg>
+				<lg type="stanza">
+					<l>A little distance from the prow</l>
+					<l rend="indent(5mm)">Those crimson shadows were :</l>
+					<l>I turn’d my eyes upon the deck—</l>
+					<l rend="indent(5mm)">O Christ! what saw I there ?</l>
+				</lg>
+				<pb facs="Wordsworth_1798_058.png" n="42"/>
+				<lg type="stanza">
+					<l>Each corse lay flat, lifeless and flat;</l>
+					<l rend="indent(5mm)">And by the Holy rood</l>
+					<l>A man all light, a seraph-man,</l>
+					<l rend="indent(5mm)">On every corse there stood.</l>
+				</lg>
+				<lg type="stanza">
+					<l>This seraph-band, each wav’d his hand :</l>
+					<l rend="indent(5mm)">It was a heavenly sight:</l>
+					<l>They stood as signals to the land,</l>
+					<l rend="indent(5mm)">Each one a lovely light :</l>
+				</lg>
+				<lg type="stanza">
+					<l>This seraph-band, each wav’d his hand,</l>
+					<l rend="indent(5mm)">No voice did they impart—</l>
+					<l>No voice ; but O ! the silence sank,</l>
+					<l rend="indent(5mm)">Like music on my heart.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Eftsones I heard the dash of oars,</l>
+					<l rend="indent(5mm)">I heard the pilot’s cheer :</l>
+					<l>My head was turn’d perforce away</l>
+					<l rend="indent(5mm)">And I saw a boat appear.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_059.png" n="43"/>
+				<lg type="stanza">
+					<l>Then vanish’d all the lovely lights,</l>
+					<l rend="indent(5mm)">The bodies rose anew :</l>
+					<l>With silent pace, each to his place,</l>
+					<l rend="indent(5mm)">Came back the ghastly crew.</l>
+					<l>The wind, that shade nor motion made,</l>
+					<l rend="indent(5mm)">On me alone it blew.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The pilot, and the pilot’s boy</l>
+					<l rend="indent(5mm)">I heard them coming fast :</l>
+					<l>Dear Lord in Heaven ! it was a joy,</l>
+					<l rend="indent(5mm)">The dead men could not blast.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I saw a third—I heard his voice :</l>
+					<l rend="indent(5mm)">It is the Hermit good !</l>
+					<l>He singeth loud his godly hymns</l>
+					<l rend="indent(5mm)">That he makes in the wood.</l>
+					<l>He’ll shrieve my soul, he’ll wash away</l>
+					<l rend="indent(5mm)">The Albatross’s blood.</l>
+				</lg>
+			</div>
+			<div>
+				<pb facs="Wordsworth_1798_060.png" n="44"/>
+				<figure type="double-line" rend="length(15mm)"/>
+				<head rend="centre uppercase">VII.</head>
+				<figure type="double-line" rend="length(15mm)"/>
+				<lg type="stanza">
+					<l>This Hermit good lives in that wood</l>
+					<l rend="indent(5mm)">Which slopes down to the Sea.</l>
+					<l>How loudly his sweet voice he rears !</l>
+					<l>He loves to talk with Marineres</l>
+					<l rend="indent(5mm)">That come from a far Contrée.</l>
+				</lg>
+				<lg type="stanza">
+					<l>He kneels at morn and noon and eve—</l>
+					<l rend="indent(5mm)">He hath a cushion plump :</l>
+					<l>It is the moss, that wholly hides</l>
+					<l rend="indent(5mm)">The rotted old Oak-stump.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_061.png" n="45"/>
+				<lg type="stanza">
+					<l>The Skiff-boat ne’rd : I heard them talk,</l>
+					<l rend="indent(5mm)">“Why, this is strange, I trow !</l>
+					<l>“ Where are those lights so many and fair</l>
+					<l rend="indent(5mm)">“ That signal made but now ?</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ Strange, by my faith ! the Hermit said—</l>
+					<l rend="indent(5mm)">“ And they answer’d not our cheer.</l>
+					<l>“ The planks look warp’d, and see those sails</l>
+					<l rend="indent(5mm)">“ How thin they are and sere !</l>
+					<l>“ I never saw aught like to them</l>
+					<l rend="indent(5mm)">“Unless perchance it were</l>
+				</lg>
+				<lg type="stanza">
+					<l>“ The skeletons of leaves that lag</l>
+					<l rend="indent(5mm)">“ My forest brook along :</l>
+					<l>“ When the Ivy-tod is heavy with snow,</l>
+					<l>“ And the Owlet whoops to the wolf below</l>
+					<l rend="indent(5mm)">“ That eats the she-wolf’s young.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_062.png" n="46"/>
+				<lg type="stanza">
+					<l>“Dear Lord ! it has a fiendish look—</l>
+					<l rend="indent(5mm)">(The Pilot made reply)</l>
+					<l>“I am a-fear’d—“ Push on, push on !</l>
+					<l rend="indent(5mm)">“Said the Hermit cheerily.</l>
+				</lg>
+				<lg type="stanza">
+					<l>The Boat came closer to the Ship,</l>
+					<l rend="indent(5mm)">But I ne spake ne stirr’d !</l>
+					<l>The Boat came close beneath the Ship,</l>
+					<l rend="indent(5mm)">And strait a sound was heard !</l>
+				</lg>
+				<lg type="stanza">
+					<l>Under the water it rumbled on,</l>
+					<l rend="indent(5mm)">Still louder and more dread :</l>
+					<l>It reach’d the Ship, it split the bay ;</l>
+					<l rend="indent(5mm)">The Ship went down like lead.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Stunn’d by that loud and dreadful sound,</l>
+					<l rend="indent(5mm)">Which sky and ocean smote :</l>
+					<l>Like one that hath been seven days drown’d</l>
+					<l rend="indent(5mm)">My body lay afloat:</l>
+					<pb facs="Wordsworth_1798_063.png" n="47"/>
+					<l>But, swift as dreams, myself I found.</l>
+					<l rend="indent(5mm)">Within the Pilot’s boat.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Upon the whirl, where sank the Ship;</l>
+					<l rend="indent(5mm)">The boat spun round and round :</l>
+					<l>And all was still, save that the hill</l>
+					<l rend="indent(5mm)">Was telling of the sound.</l>
+				</lg>
+				<lg type="stanza">
+					<l>I mov’d my lips : the Pilot shriek’d</l>
+					<l rend="indent(5mm)">And fell down in a fit.</l>
+					<l>The Holy Hermit rais’d his eyes</l>
+					<l rend="indent(5mm)">And pray’d where he did sit,</l>
+				</lg>
+				<lg type="stanza">
+					<l>I took the oars : the Pilot’s boy,</l>
+					<l rend="indent(5mm)">Who now doth crazy go,</l>
+					<l>Laugh’d loud and long, and all the while</l>
+					<l rend="indent(5mm)">His eyes went to and fro,</l>
+					<l>“ Ha ! ha !” quoth he—“ full plain I see,</l>
+					<l rend="indent(5mm)">“ The devil knows how to row.”’</l>
+				</lg>
+				<pb facs="Wordsworth_1798_064.png" n="48"/>
+				<lg type="stanza">
+					<l>And now all in mine own Countrée</l>
+					<l rend="indent(5mm)">I stood on the firm land !</l>
+					<l>The Hermit stepp’d forth from the boat,</l>
+					<l rend="indent(5mm)">And scarcely he could stand.</l>
+				</lg>
+				<lg type="stanza">
+					<l>” O shrieve me, shrieve me, holy Man !</l>
+					<l rend="indent(5mm)">The Hermit cross’d his brow—</l>
+					<l>“ Say quick,” quoth he, “ I bid thee say</l>
+					<l rend="indent(5mm)">“ What manner man art thou ?</l>
+				</lg>
+				<lg type="stanza">
+					<l>Forthwith this frame of mine was wrench’d</l>
+					<l rend="indent(5mm)">With a woeful agony,</l>
+					<l>Which forc’d me to begin my tale</l>
+					<l rend="indent(5mm)">And then it left me free.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Since then at an uncertain hour,</l>
+					<l rend="indent(5mm)">Now oftimes and now fewer,</l>
+					<l>That anguish comes and makes me tell</l>
+					<l rend="indent(5mm)">My ghastly aventure.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_065.png" n="49"/>
+				<lg type="stanza">
+					<l>I pass, like night, from land to land</l>
+					<l rend="indent(5mm)">I have strange power of speech ;</l>
+					<l>The moment that his face I see</l>
+					<l>I know the man that must hear me ;</l>
+					<l rend="indent(5mm)">To him my tale I teach.</l>
+				</lg>
+				<lg type="stanza">
+					<l>What loud uproar bursts from that door !</l>
+					<l rend="indent(5mm)">The Wedding-guests are there ;</l>
+					<l>But in the Garden-bower the Bride</l>
+					<l rend="indent(5mm)">And Bride-maids singing are :</l>
+					<l>And hark the little Vesper-bell</l>
+					<l rend="indent(5mm)">Which biddeth me to prayer.</l>
+				</lg>
+				<lg type="stanza">
+					<l>O Wedding-guest! this soul hath been</l>
+					<l rend="indent(5mm)">Alone on a wide wide sea :</l>
+					<l>So lonely ’twas, that God himself</l>
+					<l rend="indent(5mm)">Scarce seemed there to be.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_066.png" n="50"/>
+				<lg type="stanza">
+					<l>O sweeter than the Marriage-feast,</l>
+					<l rend="indent(5mm)">‘Tis sweeter far to me</l>
+					<l>To walk together to the Kirk</l>
+					<l rend="indent(5mm)">With a goodly company.</l>
+				</lg>
+				<lg type="stanza">
+					<l>To walk together to the Kirk</l>
+					<l rend="indent(5mm)">And all together pray,</l>
+					<l>While each to his great father bends,</l>
+					<l>Old men, and babes, and loving friends,</l>
+					<l rend="indent(5mm)">And Youths, and Maidens gay.</l>
+				</lg>
+				<lg type="stanza">
+					<l>Farewell, farewell ! but this I tell</l>
+					<l rend="indent(5mm)">To thee, thou wedding-guest!</l>
+					<l>He prayeth well who loveth well,</l>
+					<l rend="indent(5mm)">Both man and bird and beast.</l>
+				</lg>
+				<lg type="stanza">
+					<l>He prayeth best who loveth best,</l>
+					<l rend="indent(5mm)">All things both great and small :</l>
+					<l>For the dear God, who loveth us,</l>
+					<l rend="indent(5mm)">He made and loveth all.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_067.png" n="51"/>
+				<lg type="stanza">
+					<l>The Marinere, whose eye is bright,</l>
+					<l rend="indent(5mm)">Whose beard with age is hoar,</l>
+					<l>Is gone; and now the wedding-guest</l>
+					<l rend="indent(5mm)">Turn’d from the bridegroom’s door.</l>
+				</lg>
+				<lg type="stanza">
+					<l>He went, like one that hath been stunn’d</l>
+					<l rend="indent(5mm)">And is of sense forlorn :</l>
+					<l>A sadder and a wiser man</l>
+					<l rend="indent(5mm)">He rose the morrow morn.</l>
+				</lg>
+				<pb facs="Wordsworth_1798_068.png"/>
+			</div>
+		</body>
+	</text>
+</TEI>
