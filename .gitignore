@@ -1,2 +1,12 @@
-public/
+
+# Never DS_Store
 .DS_Store
+
+# Public products
+public
+
+# Products
+
+ballad_data/data/*.png
+ballad_data/data/*.MODS.xml
+

@@ -1,0 +1,177 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Nightingale, a Conversational Poem</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Lyrical Ballads</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>
+                    Poems transcribed from OCR and Page Scans of the 1798 Edition of Lyrical Ballads held at Simon Fraser University
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb facs="Wordsworth_1798_079.png"/>
+            <head rend="centre uppercase font-size(3mm)">
+                THE NIGHTINGALE;</head>
+                <head type="sub" rend="centre uppercase font-size(2mm)">A CONVERSATIONAL POEM, WRITTEN IN APRIL,</head>
+                <head type="sub" rend="centre uppercase font-size(2.5mm)">
+                    1798.
+            </head>
+            <figure type="double-line" rend="length(15mm)"/>
+            <lg type="stanza">
+                <l>No cloud, no relique of the sunken day</l>
+                <l>Distinguishes the West, no long thin slip</l>
+                <l>Of sullen Light, no obscure trembling hues.</l>
+                <l>Come, we will rest on this old mossy Bridge !</l>
+                <l>You see the glimmer of the stream beneath,</l>
+                <l>But hear no murmuring : it flows silently</l>
+                <l>O’er its soft bed of verdure. All is still,</l>
+                <l>A balmy night ! and tho’ the stars be dim,</l>
+                <l>Yet let us think upon the vernal showers</l>
+                <l>That gladden the green earth, and we shall find</l>
+                <pb facs="Wordsworth_1798_080.png" n="64"/>
+                <l>A pleasure in the dimness of the stars.</l>
+                <l>And hark ! the Nightingale begins its song,</l>
+                <l>
+                    “ Most musical, most melancholy”
+                    <ptr n="*" target="#n1" xml:id="pn1"/>
+                    Bird !
+                </l>
+                <l>A melancholy Bird ? O idle thought!</l>
+                <l>In nature there is nothing melancholy.</l>
+                <l>
+                    —But some night-wandering Man, whose heart was pierc’d
+                </l>
+                <l>With the remembrance of a grievous wrong,</l>
+                <l>Or slow distemper or neglected love,</l>
+                <l>
+                    (And so, poor Wretch ! fill'd all things with himself
+                </l>
+                <l>And made all gentle sounds tell back the tale</l>
+                <l>Of his own sorrows) he and such as he</l>
+                <l>First nam’d these notes a melancholy strain ;</l>
+                <l>And many a poet echoes the conceit,</l>
+                <note xml:id="n1">
+                    * “
+                    <hi rend="italic">Most musical, most melancholy.</hi>
+                    ” This passage in Milton possesses an excellence far superior to that of mere description: it is spoken in the character of the melancholy Man, and has therefore a
+                    <hi rend="italic">dramatic</hi>
+                    propriety. The Author makes this remark, to rescue himself from the charge of having alluded with levity to a line in Milton: a charge than which none could be more painful him, except perhaps that of having ridiculed his Bible.
+                </note>
+                <pb facs="Wordsworth_1798_081.png" n="65"/>
+                <l>Poet, who hath been building up the rhyme</l>
+                <l>When he had better far have stretch’d his limbs</l>
+                <l>Beside a brook in mossy forest-dell</l>
+                <l>By sun or moonlight, to the influxes</l>
+                <l>Of shapes and sounds and shifting elements</l>
+                <l>Surrendering his whole spirit, of his song</l>
+                <l>And of his fame forgetful ! so his fame</l>
+                <l>Should share in nature’s immortality,</l>
+                <l>A venerable thing ! and so his song</l>
+                <l>Should make all nature lovelier, and itself</l>
+                <l>Be lov’d, like nature ! —But ’twill not be so;</l>
+                <l>And youths and maidens most poetical</l>
+                <l>Who lose the deep’ning twilights of the spring</l>
+                <l>In ball-rooms and hot theatres, they still</l>
+                <l>Full of meek sympathy must heave their sighs</l>
+                <l>O’er Philomela’s pity-pleading strains.</l>
+                <l>My Friend, and my Friend’s Sister! we have learnt</l>
+                <l>A different lore : we may not thus profane</l>
+                <l>Nature’s sweet voices always full of love</l>
+                <pb facs="Wordsworth_1798_082.png" n="66"/>
+                <l>And joyance ! ’Tis the merry Nightingale</l>
+                <l>That crowds, and hurries, and precipitates</l>
+                <l>With fast thick warble his delicious notes,</l>
+                <l>As he were fearful, that an April night</l>
+                <l>Would be too short for him to utter forth</l>
+                <l>His love-chant, and disburthen his full soul</l>
+                <l>Of all its music ! And I know a grove</l>
+                <l>Of large extent, hard by a castle huge</l>
+                <l>Which the great lord inhabits not: and so</l>
+                <l>This grove is wild with tangling underwood,</l>
+                <l>And the trim walks are broken up, and grass,</l>
+                <l>Thin grass and king-cups grow within the paths.</l>
+                <l>But never elsewhere in one place I knew</l>
+                <l>So many Nightingales : and far and near</l>
+                <l>In wood and thicket over the wide grove</l>
+                <l>They answer and provoke each other’s songs—</l>
+                <l>With skirmish and capricious passagings,</l>
+                <l>And murmurs musical and swift jug jug</l>
+                <l>And one low piping sound more sweet than all—</l>
+                <pb facs="Wordsworth_1798_083.png" n="67"/>
+                <l>Stirring the air with such an harmony,</l>
+                <l>That should you close your eyes, you might almost</l>
+                <l>Forget it was not day ! On moonlight bushes,</l>
+                <l>Whose dewy leafits are but half disclos’d,</l>
+                <l>You may perchance behold them on the twigs,</l>
+                <l>
+                    Their bright, bright eyes, their eyes both bright and full,
+                </l>
+                <l>Glistning, while many a glow-worm in the shade</l>
+                <l>Lights up her love-torch,</l>
+            </lg>
+            <lg type="stanza">
+                <l rend="indent(25mm)">A most gentle maid</l>
+                <l>Who dwelleth in her hospitable home</l>
+                <l>Hard by the Castle, and at latest eve,</l>
+                <l>(Even like a Lady vow’d and dedicate</l>
+                <l>To something more than nature in the grove)</l>
+                <l>
+                    Glides thro’ the pathways; she knows all their notes.
+                </l>
+                <l>
+                    That gentle
+                    <rs type="person">Maid!</rs>
+                    and oft, a moment’s space,
+                </l>
+                <l>What time the moon was lost behind a cloud,</l>
+                <l>Hath heard a pause of silence: till the Moon</l>
+                <l>Emerging, hath awaken’d earth and sky</l>
+                <pb facs="Wordsworth_1798_084.png" n="68"/>
+                <l>With one sensation, and those wakeful Birds</l>
+                <l>Have all burst forth in choral minstrelsy,</l>
+                <l>As if one quick and sudden Gale had swept</l>
+                <l>An hundred airy harps! And she hath watch'd</l>
+                <l>Many a Nightingale perch giddily</l>
+                <l>On blosmy twig still swinging from the breeze,</l>
+                <l>And to that motion tune his wanton song,</l>
+                <l>Like tipsy Joy that reels with tossing head.</l>
+            </lg>
+            <lg type="stanza">
+                <l>Farewell, O Warbler ! till to morrow eve,</l>
+                <l>And you, my friends! farewell, a short farewell!</l>
+                <l>We have been loitering long and pleasantly,</l>
+                <l>And now for our dear homes.—That strain again!</l>
+                <l>Full fain if would' delay me!—My dear Babe,</l>
+                <l>Who, capable of no articulate sound,</l>
+                <l>Mars all things with his imitative lisp,</l>
+                <l>How he would place his hand beside his ear,</l>
+                <l>His little hand, the small,forefinger up,</l>
+                <l>And bid us listen! And I deem it wise</l>
+                <pb facs="Wordsworth_1798_085.png" n="69"/>
+                <l>To make him Nature's playmate. He knows well</l>
+                <l>The evening star: and once when he awoke</l>
+                <l>In most distressful mood (some inward pain</l>
+                <l>Had made up that strange thing, an infant’s dream)</l>
+                <l>I hurried with him to our orchard plot,</l>
+                <l>And he beholds the moon, and hush’d at once</l>
+                <l>Suspends his sobs, and laughs most silently,</l>
+                <l>While his fair eyes that swam with undropt tears</l>
+                <l>Did glitter in the yellow moon-beam! Well—</l>
+                <l>It is a father’s tale. But if that Heaven</l>
+                <l>Should give me life, his childhood shall grow up</l>
+                <l>Familiar with these songs, that with the night</l>
+                <l>He may associate Joy ! Once more farewell,</l>
+                <l>Sweet Nightingale! once more, my friends! farewell</l>
+            </lg>
+        </body>
+    </text>
+</TEI>

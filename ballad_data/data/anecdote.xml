@@ -1,0 +1,124 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Anedcote for Fathers, Shewing How the Art of Lying May Be Taught</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <lg>
+        <pb facs="Wordsworth_1798_123.png"/>
+        <head>
+          <title type="main" rend="centre uppercase font-size(3mm)">ANEDCOTE FOR FATHERS,</title>
+          <title type="sub" rend="centre uppercase font-size(1.5mm)">SHEWING HOW THE ART OF LYING MAY BE <lb/>
+         TAUGHT.</title>
+        </head>
+        <figure type="double-line" rend="length(15mm)"/>
+        <lg type="stanza">
+          <l>I have a boy of five years old,</l>
+          <l>His face is fair and fresh to see;</l>
+          <l>His limbs are cast in beauty’s mould,</l>
+          <l>And dearly he loves me.</l>
+        </lg>
+        <lg type="stanza">
+          <l>One morn we stroll’d on our dry walk,</l>
+          <l> Our quiet house all full in view</l>
+          <l>And held such intermitted talk</l>
+          <l>As we are wont to do.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_124.png" n="106"/>
+        <lg type="stanza">
+          <l>My thoughts on former pleasure ran ;</l>
+          <l> I thought of Kilve’s delightful shore,</l>
+          <l>My pleasant home, when spring began,</l>
+          <l>A long, long year before.</l>
+        </lg>
+        <lg type="stanza">
+          <l>A day it was when I could bear</l>
+          <l>To think, and think, and think again ;</l>
+          <l> With so much happiness to spare,</l>
+          <l>I could not feel a pain.</l>
+        </lg>
+        <lg type="stanza">
+          <l>My boy was by my side, so slim</l>
+          <l>And graceful in his rustic dress!</l>
+          <l>And oftentimes I talked to him,</l>
+          <l>In very idleness.</l>
+        </lg>
+        <lg type="stanza">
+          <l>The young lambs ran a pretty race;</l>
+          <l> The morning sun shone bring and warm;</l>
+          <l> “ Kilve,” said I, ” was a pleasant place,</l>
+          <l> “ And so is Liswyn farm.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_125.png" n="107"/>
+        <lg type="stanza">
+          <l>“ My little boy, which like you more,”</l>
+          <l> I said and took him by the arm—</l>
+          <l>“ Our home by Kilve’s delightful shore,</l>
+          <l> “ Or here at Liswyn farm ?”</l>
+        </lg>
+        <lg type="stanza">
+          <l>“ And tell me, had you rather be,”</l>
+          <l> I said and held him by the arm,</l>
+          <l> “ At Klive’s smooth shore by the green sea,</l>
+          <l>“ Or here at Liswyn farm ?</l>
+        </lg>
+        <lg type="stanza">
+          <l>In careless mood he looked at me,</l>
+          <l>While still I held him by the arm,</l>
+          <l> And said, ” At Kilve I’d rahter be</l>
+          <l> “ Than here at Liswyn farm.”</l>
+        </lg>
+        <lg type="stanza">
+          <l>“ Now, little Edward, say why so ;</l>
+          <l>My little Edward, tell me why ;”</l>
+          <l>“ I cannot tell, I do not know.”</l>
+          <l>“ Why this is strange,” said I.</l>
+        </lg>
+        <pb facs="Wordsworth_1798_126.png" n="108"/>
+        <lg type="stanza">
+          <l>“ For, here are woods and green-hills warm ;</l>
+          <l>“ There surely muft some reason be</l>
+          <l>“ Why you would change sweet Liswyn farm</l>
+          <l>“ For Kilve by the green sea.”</l>
+        </lg>
+        <lg type="stanza">
+          <l>At this, my boy, so fair and slim,</l>
+          <l>Hung down his head, nor made reply ;</l>
+          <l>And five times did I say to him,</l>
+          <l>“ Why? Edward, tell me why ?”</l>
+        </lg>
+        <lg type="stanza">
+          <l>His head he raised—there was in sight,</l>
+          <l>It caught his eye, he saw it plain—</l>
+          <l>Upon the house-top, glittering bright,</l>
+          <l>A broad and gilded vane.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Then did the boy his tongue unlock,</l>
+          <l>And thus to me he made reply ;</l>
+          <l>“ At Kilve there was no weather-cock,</l>
+          <l> “ And that’s the reason why.”</l>
+        </lg>
+        <pb facs="Wordsworth_1798_127.png" n="109"/>
+        <lg type="stanza">
+          <l>Oh deareft, dearest boy ! my heart</l>
+          <l>For better lore would seldom yearn,</l>
+          <l>Could I but teach the hundredth part</l>
+          <l>Of what from thee I learn.</l>
+        </lg>
+      </lg>
+    </body>
+  </text>
+</TEI>
