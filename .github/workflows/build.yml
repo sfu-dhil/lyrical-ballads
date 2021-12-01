@@ -1,0 +1,28 @@
+name: Build Lyrical Ballads Site
+on: push
+concurrency:
+    group: ${{ github.ref }}
+    cancel-in-progress: false
+jobs:
+   build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            # First checkout this repo
+            - name: Self checkout
+              uses: actions/checkout@v2
+              with:
+                submodules: true
+            - name: Install ant
+              if: ${{ env.ACT }}
+              run: apt-get update; apt-get install -y --no-install-recommends --no-upgrade ant
+           # Then run the build using the default target
+            - name: Build site
+              run: ant -f ${{ github.workspace }}/build.xml 
+            - name: Deploy 🚀
+              if: ${{ !env.ACT }}
+              uses: JamesIves/github-pages-deploy-action@4.1.3
+              with:
+                branch: docs # The branch the action should deploy to.
+                folder: ${{ github.workspace }}/public # The folder the action should deploy.
+                single-commit: true

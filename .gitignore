@@ -10,3 +10,5 @@ public
 ballad_data/data/*.png
 ballad_data/data/*.MODS.xml
 
+# Ignore the symlinked Github repo
+github
