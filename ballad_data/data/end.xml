@@ -1,0 +1,181 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>End Matter</title>
+                <author>Worsdworth and Coleridge</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <pb facs="Wordsworth_1798_229.png"/>
+                <head type="main" rend="centre uppercase font-size(3mm)">ERRATA.</head>
+                <figure type="double-line" rend="length(15mm)"/>
+                <table>
+                    <row>
+                        <cell>Page</cell>
+                    </row>
+                    <row>
+                        <cell>10</cell>
+                        <cell>for “ fog smoke-white,” read “ fog-smoke white.”</cell>
+                    </row>
+                    <row>
+                        <cell>18</cell>
+                        <cell>“ those,” read “ these.”</cell>
+                    </row>
+                    <row>
+                        <cell>50</cell>
+                        <cell>Omit the comma after “ loveth well.”</cell>
+                    </row>
+                    <row>
+                        <cell>140</cell>
+                        <cell>after “ clanking hour,” place a comma.</cell>
+                    </row>
+                    <row>
+                        <cell>202</cell>
+                        <cell>
+                            omit the sixth line from the bottom,
+                            <lb/>
+                            <l rend="indent(5mm)">“ And the low copses coming from the trees.”</l>
+                        </cell>
+                    </row>
+                </table>
+                <pb facs="Wordsworth_1798_230.png"/>
+                <div type="catalog">
+                    <head rend="centre uppercase italics font-size(3mm)">P U B L I S H E D </head>
+                    <head rend="centre uppercase font-size(3mm)">
+                        For JOSEPH COTTLE,
+                        <w rend="italics">Bristol.</w>
+                    </head>
+                    <head rend="centre uppercase font-size(3mm)">Mr. T. LONGMAN, and MESSRS. LEE AND HURST,</head>
+                    <head rend="centre uppercase italics font-size(3mm)"> Paternoster-Row, London.</head>
+                    <figure type="double-line" rend="length(15mm)"/>
+                    <list type="numbered">
+                        <item>POEMS, by ROBERT SOUTHEY, Second Edition - 5s. Boards.</item>
+                        <item rend="first-indent(-5mm)">
+                            JOAN OF ARC, by ROBERT SOUTHEY, Second Edition
+                            <lb/>
+                            corrected, with copious notes - 2 vols. 12s.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            POEMS, by S.T. COLERIDGE, to which are added, POEMS,
+                            <lb/>
+                            by CHARLES LAMB and CHARLES LLOYD, Second Edition,
+                            <lb/>
+                            6s. Boards.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            In the Press, a Second Edition, corrected, with views in
+                            <lb/>
+                            aqua tinta, of LETTERS written during a short Residence in
+                            <lb/>
+                            Spain and Portugal, by ROBERT SOUTHEY.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            A SERIES OF POEMS, containing the Plaints, Consolations,
+                            <lb/>
+                            and Delights of ACHMED ARDEBEILI, a Persian Exile.
+                            <lb/>
+                            With NOTES, Historical and Explanatory, by CHARLES FOX,
+                            <lb/>
+                            Octavo, 8s. Boards.
+                        </item>
+                        <item>POEMS, by JOSEPH COTTLE, Second Edition, 4s. Boards.</item>
+                        <item rend="first-indent(-5mm)">
+                            ICELANDIC POETRY, or the EDDA of SAEMUND, translated into
+                            <lb/>
+                            English Verse, by A.S. COTTLE, of Magdalen College
+                            <lb/>
+                            Cambridge, Octavo, 6s. Boards.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            EDMUND OLIVER, by CHARLES LLOYD, 2 vols. 12mo. 8s.
+                            <lb/>
+                            Boards.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            In the Press, a Second Volume of POEMS, by ROBERT
+                            <lb/>
+                            SOUTHEY, including the Vision of the Maid of Orleans
+                            <lb/>
+                            formerly printed as the Ninth Book of JOAN OF ARC.
+                        </item>
+                        <note xml:id="ne1">
+                            This page was removed from the book, but the content has been supplied from Duke University's 1798 edition of
+                            <bibl>
+                                <title>Lyrical Ballads</title>
+                            </bibl>
+                            .
+                        </note>
+                        <pb facs="Wordsworth_1798_231.png"/>
+                        <item rend="first-indent(-5mm)">
+                            MALVERN HILLS, a POEM by JOSEPH COTTLE. Quarto.
+                            <lb/>
+                            2s. 6d.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            SERMONS, by the late Rev. DAVID JARDINE, or BATH-
+                            <lb/>
+                            published from the Original Manuscripts, by the Rev.
+                            <lb/>
+                            JOHN PRIOR ESTLIN. 2 vols. Octavo. 14s.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            EVIDENCES OF REVEALED RELIGION, and particularly
+                            <lb/>
+                            CHRISTIANITY, with reference to a pamphlet called the
+                            <lb/>
+                            AGE OF REASON-In a DISCOURSE delivered by the Rev.
+                            <lb/>
+                            JOHN PRIOR ESTLIN. 1s 6d.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            THE NATURE and the CAUSES of ATHEISOM, pointed out in a
+                            <lb/>
+                            DISCOURSE delivered by the Rev. JOHN PRIOR ESTLIN.
+                            <lb/>
+                            To which are added, Remarks on a Work, entitled
+                            <seg rend="italics">
+                                Origine
+                                <lb/>
+                                de tous les cultes, ou Religion universelle. Par Dupuis,
+                                <lb/>
+                                Citoyen François.
+                            </seg>
+                            2s. 6d.
+                        </item>
+                        <item rend="first-indent(-5mm)">
+                            LECTURE, introductory of a course of popular instruction on
+                            <lb/>
+                            the Constitution and Management of the Human Body. By
+                            <lb/>
+                            THOMAS BEDDOES, M. D. Octavo. 1s. 6d.
+                        </item>
+                        <note xml:id="ne2">
+                            This page was removed from the book, but the content has been supplied from Duke University's 1798 edition of
+                            <bibl>
+                                <title>Lyrical Ballads</title>
+                            </bibl>
+                            .
+                        </note>
+                    </list>
+                </div>
+                <pb facs="Wordsworth_1798_232.png"/>
+                <pb facs="Wordsworth_1798_233.png"/>
+                <pb facs="Wordsworth_1798_234.png"/>
+                <pb facs="Wordsworth_1798_235.png"/>
+                <pb facs="Wordsworth_1798_236.png"/>
+            </div>
+        </body>
+    </text>
+</TEI>
