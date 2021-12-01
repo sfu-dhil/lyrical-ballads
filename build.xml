@@ -19,6 +19,9 @@
    
    <property name="code.dir" value="${basedir}/static"/>
    <property name="xsl.dir" value="${code.dir}/xsl"/>
+   <property name="lib.dir" value="${basedir}/lib"/>
+
+   <property name="saxon.jar" value="${lib.dir}/saxon10HE.jar"/>
    
    <condition property="sass-installed">
       <available file="sass"
@@ -29,11 +32,39 @@
       <istrue value="${sass-installed}"/>
    </condition>
    
+
+   
+   <condition property="saxon-installed">
+      <available type="file" file="${saxon.jar}"/>
+   </condition>
+   
+
+   
+   
    
    <target name="init">
       <delete dir="${dist.dir}"/>
       <mkdir dir="${dist.dir}"/>
    </target>
+   
+   
+   <target name="getSass" unless="sass-installed">
+      <get 
+         src="https://github.com/sass/dart-sass/releases/download/1.33.0/dart-sass-1.33.0-linux-x64.tar.gz"
+         dest="/tmp/sass.tar.gz"/>
+      <!--First make a directory-->
+      <mkdir dir="${sassDir}"/>
+      <exec executable="tar">
+         <arg line="-xf /tmp/sass.tar.gz -C ${sassDir} --strip-components 1"/>
+      </exec>
+   </target>
+   
+   <target name="getSaxon" unless="saxon-installed">
+      <mkdir dir="${lib.dir}"/>
+      <get src="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/10.3/Saxon-HE-10.3.jar" dest="${saxon.jar}"/>
+   </target>
+   
+   <target name="deps" depends="getSaxon, getSass"/>
    
    <!--First, move the data over-->
    
@@ -58,18 +89,8 @@
       </copy>
    </target>
 
-   <target name="sass" unless="sass-installed">
-      <get 
-         src="https://github.com/sass/dart-sass/releases/download/1.33.0/dart-sass-1.33.0-linux-x64.tar.gz"
-         dest="/tmp/sass.tar.gz"/>
-      <!--First make a directory-->
-      <mkdir dir="${sassDir}"/>
-      <exec executable="tar">
-         <arg line="-xf /tmp/sass.tar.gz -C ${sassDir} --strip-components 1"/>
-      </exec>
-   </target>
    
-   <target name="assets" depends="sass">
+   <target name="assets">
       <description>Copies over the site assets and processes them.</description>
       <copy todir="${dist.dir}">
          <fileset dir="${code.dir}">
@@ -78,31 +99,29 @@
             <exclude name="xsl/**"/>
          </fileset>
       </copy>
-      <exec executable="sass">
+      
+      <!--Need to prepend the sassDir so that if it's not installed,
+         it can still be run-->
+      <exec executable="${sassDir}sass">
          <arg line="${dist.dir}/scss:${dist.dir}/css"/>
       </exec>
       
    </target>
    
-   <target name="flatten">
-      <description>Flattens the XML</description>
-      <exec executable="saxon">
-         <arg line="-xsl:${xsl.dir}/xml_flatten_master.xsl -it:go dist=${dist.dir}/flattened"/>
-      </exec>
-   </target>
-   
    <target name="html">
       <description>Converts all of the XML files to HTML.</description>
-      <exec executable="saxon">
-         <arg line="-xsl:${xsl.dir}/html_master.xsl -it:go dist=${dist.dir}"/>
-      </exec>
+      <java jar="${saxon.jar}" fork="true" failOnError="true">
+         <arg line="-xsl:${xsl.dir}/html_master.xsl"/>
+         <arg line="-it:go"/>
+         <arg line="dist=${dist.dir}"/>
+      </java>
    </target>
    
    
    
    
    
-   <target name="all" depends="init, copyXML, copyFacs, assets, html"/>
+   <target name="all" depends="init, deps, copyXML, copyFacs, assets, html"/>
    
   
    
