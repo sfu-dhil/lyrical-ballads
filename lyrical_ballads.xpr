@@ -2,9 +2,21 @@
 <project version="22.0">
     <meta>
         <filters directoryPatterns="" filePatterns="\Qlyrical_ballads.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="22.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
     </meta>
     <projectTree name="lyrical_ballads.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="static/xsl/html_master.xsl"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>

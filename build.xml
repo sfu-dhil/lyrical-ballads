@@ -15,7 +15,8 @@
    <property name="dist.xml.dir" value="${dist.dir}/xml"/>
    <property name="dist.facs.dir" value="${dist.dir}/facs"/>
    
-   <property name="xsl.dir" value="${basedir}/static/xsl"/>
+   <property name="code.dir" value="${basedir}/static"/>
+   <property name="xsl.dir" value="${code.dir}/xsl"/>
    
    <target name="init">
       <delete dir="${dist.dir}"/>
@@ -30,8 +31,6 @@
       <copy todir="${dist.xml.dir}">
          <fileset dir="${src.xml.dir}">
             <include name="*.xml"/>
-            <!--Exclude "end.xml" since it's broken-->
-            <exclude name="end.xml"/>
             <exclude name="*.MODS.xml"/>
          </fileset>
       </copy>
@@ -47,6 +46,28 @@
       </copy>
    </target>
    
+   <target name="assets">
+      <description>Copies over the site assets and processes them.</description>
+      <copy todir="${dist.dir}">
+         <fileset dir="${code.dir}">
+            <include name="**/**"/>
+            <exclude name="template.html"/>
+            <exclude name="xsl/**"/>
+         </fileset>
+      </copy>
+      <exec executable="sass">
+         <arg line="${dist.dir}/scss:${dist.dir}/css"/>
+      </exec>
+      
+   </target>
+   
+   <target name="flatten">
+      <description>Flattens the XML</description>
+      <exec executable="saxon">
+         <arg line="-xsl:${xsl.dir}/xml_flatten_master.xsl -it:go dist=${dist.dir}/flattened"/>
+      </exec>
+   </target>
+   
    <target name="html">
       <description>Converts all of the XML files to HTML.</description>
       <exec executable="saxon">
@@ -58,7 +79,7 @@
    
    
    
-   <target name="all" depends="init, copyXML, copyFacs, html"/>
+   <target name="all" depends="init, copyXML, copyFacs, assets, html"/>
    
   
    
