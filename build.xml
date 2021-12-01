@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="buildLyricalBallads" default="all">
    
+  
+   <property name="debug" value="0"/> 
+   
+   <property environment="env"/>
    
    
    <property name="tmp" value="${basedir}/tmp"/>
-   <property name="debug" value="0"/>
-   
    
    <property name="src.dir" value="${basedir}/ballad_data"/>
    <property name="src.xml.dir" value="${src.dir}/data"/>
@@ -17,6 +19,16 @@
    
    <property name="code.dir" value="${basedir}/static"/>
    <property name="xsl.dir" value="${code.dir}/xsl"/>
+   
+   <condition property="sass-installed">
+      <available file="sass"
+         filepath="${env.PATH}"/>
+   </condition>
+   
+   <condition property="sassDir" value="" else="/tmp/sass/">
+      <istrue value="${sass-installed}"/>
+   </condition>
+   
    
    <target name="init">
       <delete dir="${dist.dir}"/>
@@ -45,8 +57,19 @@
          </fileset>
       </copy>
    </target>
+
+   <target name="sass" unless="sass-installed">
+      <get 
+         src="https://github.com/sass/dart-sass/releases/download/1.33.0/dart-sass-1.33.0-linux-x64.tar.gz"
+         dest="/tmp/sass.tar.gz"/>
+      <!--First make a directory-->
+      <mkdir dir="${sassDir}"/>
+      <exec executable="tar">
+         <arg line="-xf /tmp/sass.tar.gz -C ${sassDir} --strip-components 1"/>
+      </exec>
+   </target>
    
-   <target name="assets">
+   <target name="assets" depends="sass">
       <description>Copies over the site assets and processes them.</description>
       <copy todir="${dist.dir}">
          <fileset dir="${code.dir}">
