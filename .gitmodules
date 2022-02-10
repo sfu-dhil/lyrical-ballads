@@ -1,0 +1,3 @@
+[submodule "staticSearch"]
+	path = staticSearch
+	url = https://github.com/projectEndings/staticSearch
