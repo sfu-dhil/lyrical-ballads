@@ -65,6 +65,10 @@
         </xsl:for-each>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Root template for matching the html template</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
     <xsl:template match="/" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:result-document href="{$dist}/{dhil:basename($doc)}.html" method="xhtml" html-version="5.0">
@@ -73,6 +77,10 @@
         </xsl:result-document>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Add the document's title</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
     <xsl:template match="html/head/title" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:copy>
@@ -80,6 +88,9 @@
         </xsl:copy>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Process the TOC</xd:desc>
+    </xd:doc>
     <xsl:template match="*[@id='nav_toc']" mode="html">
         <xsl:copy>
             <xsl:apply-templates select="@*" mode="#current"/>
@@ -87,14 +98,16 @@
         </xsl:copy>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Process the TEI document's content in the content block</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
     <xsl:template match="*[@id='content']" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:copy>
             <xsl:apply-templates select="$doc" mode="tei"/>
         </xsl:copy>
     </xsl:template>
-    
-
     
     <xd:doc>
         <xd:desc>Processing for navigation: Just process items and links, no pages</xd:desc>
@@ -107,6 +120,7 @@
     
     <xd:doc>
         <xd:desc>Process local links</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
     </xd:doc>
     <xsl:template match="a[matches(@href,'^[^/]+\.html$')]" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
@@ -118,12 +132,8 @@
             <xsl:apply-templates select="@*[not(local-name() = 'class')]|node()" mode="#current"/>
         </xsl:copy>
     </xsl:template>
-    
 
-    
-    
-    
-   
+
    <xd:doc>
        <xd:desc>Function to retrieve the basename of a document</xd:desc>
        <xd:param name="node">Any node in a document</xd:param>
@@ -133,8 +143,5 @@
         <xsl:variable name="uri" select="document-uri(root($node))" as="xs:anyURI"/>
         <xsl:sequence select="tokenize($uri,'[/\.]')[last() -1]"/>
     </xsl:function>
-    
-    
-    
     
 </xsl:stylesheet>

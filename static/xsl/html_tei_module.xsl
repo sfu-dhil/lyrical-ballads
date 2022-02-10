@@ -232,7 +232,7 @@
     </xsl:template>
     
     <xsl:template match="pb" mode="tei">
-        <img src="facs/{@facs}"/>
+        <img src="facs/{replace(@facs,'.png','.jpg')}" loading="lazy"/>
     </xsl:template>
     
     <xsl:template match="text()" mode="tei">

@@ -5,9 +5,15 @@
  */
  
 @import 'reset';
+@import 'fonts';
  
-body{
+:root, html{
+    font-size: 1rem;
+} 
 
+body{
+    font-family: "Cormorant Garamond";
+    font-size: 1.2rem;
  }
 
  
@@ -17,37 +23,27 @@ ul[data-type="toc"] {
     list-style: none;
 }
 
-#nav{
-    ul[data-type="toc"]{
-        margin: 0;
-        padding:0;
-        li{
-            margin-left:0;
-            padding-left:0;
-        }
-        li + li{
-            border-top: 1px solid #efefef;
-        }
-        
-      a{
-        display:block;
-        height:100%;
-        width:100%;
-        padding:0.2rem 0.4rem;
-        text-decoration:none;
-       }
-   }    
-}
 
 nav{
+    background:grey;
+    padding:.5rem 0;
     display:flex;
     width:100%;
 }
+
+
 
 nav > ul{
     display:flex;
     width:100%;
     justify-content:space-between;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    & > li{
+        text-align:center;
+        
+    }
 }
 
 nav ul ul{
@@ -70,10 +66,22 @@ article{
 
 .page{
     display:grid;
-    grid-template-columns: 50ch clamp(19rem, 33vw, 38rem);
+    grid-template-columns: minmax(min-content, 50ch) clamp(10rem, 33vw, 38rem);
+    @media (max-width: 767px){
+        grid-template-columns: auto;
+        .text{
+            order: 2;
+        }
+        .image{
+            order: 1;
+            margin-bottom:0.6rem;
+            padding-bottom:0.6rem;
+            border-bottom: 1px solid #efefef;
+        }
+    }
     gap: 1em;
     padding: 4rem 0.75rem;
-    justify-content:space-between;
+    justify-content:center;
 }
 
 
@@ -86,8 +94,16 @@ article{
     
 }
 
+.image{
+        margin: 0 auto;
+}
+    
+
 img{
-    min-height: 30rem;
+    max-height:30rem;
+    max-width:100%;
+    height:auto;
+    width:auto;
 }
 
 .pageNum{

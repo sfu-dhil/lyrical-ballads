@@ -32,14 +32,9 @@
       <istrue value="${sass-installed}"/>
    </condition>
    
-
-   
    <condition property="saxon-installed">
       <available type="file" file="${saxon.jar}"/>
    </condition>
-   
-
-   
    
    
    <target name="init">
@@ -82,13 +77,15 @@
    <target name="copyFacs">
       <description>Copies all of the facsimile files over</description>
       <mkdir dir="${dist.facs.dir}"/>
-      <copy todir="${dist.facs.dir}">
+      <apply executable="convert" dest="${dist.facs.dir}">
+         <srcfile/>
+         <targetfile/>
          <fileset dir="${src.facs.dir}">
             <include name="*"/>
          </fileset>
-      </copy>
+         <globmapper from="*.png" to="*.jpg"/>
+      </apply>
    </target>
-
    
    <target name="assets">
       <description>Copies over the site assets and processes them.</description>
@@ -105,8 +102,9 @@
       <exec executable="${sassDir}sass">
          <arg line="${dist.dir}/scss:${dist.dir}/css"/>
       </exec>
-      
    </target>
+   
+   
    
    <target name="html">
       <description>Converts all of the XML files to HTML.</description>
@@ -116,9 +114,6 @@
          <arg line="dist=${dist.dir}"/>
       </java>
    </target>
-   
-   
-   
    
    
    <target name="all" depends="init, deps, copyXML, copyFacs, assets, html"/>
