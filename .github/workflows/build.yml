@@ -16,6 +16,9 @@ jobs:
             - name: Install ant
               if: ${{ env.ACT }}
               run: apt-get update; apt-get install -y --no-install-recommends --no-upgrade ant
+            # Must also install ant-contrib
+            - name: Install ant-contrib
+              run: sudo apt-get install -y --no-install-recommends --no-upgrade ant-contrib
            # Then run the build using the default target
             - name: Build site
               run: ant -f ${{ github.workspace }}/build.xml 

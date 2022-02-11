@@ -12,3 +12,6 @@ ballad_data/data/*.MODS.xml
 
 # Ignore the symlinked Github repo
 github
+
+#Ignore the lib
+lib
