@@ -45,14 +45,25 @@
     </xd:doc>
     <xsl:variable name="docs" select="collection($dist || '/xml?select=*.xml')" as="document-node()+"/>
     
+    <xsl:variable name="indexList" select="$docs[dhil:basename(.) = 'index']//tei:list[@type='toc']"/>
+    
+    
+    <xd:doc>
+        <xd:desc>Item sequence</xd:desc>
+    </xd:doc>
+    <xsl:variable name="indexSeq" select="$indexList//tei:ref" as="element(tei:ref)+"/>
+    
     <xd:doc>
         <xd:desc>Index list</xd:desc>
     </xd:doc>
     <xsl:variable name="index" as="element()*">
         <xsl:apply-templates 
-            select="$docs[dhil:basename(.) = 'index']//tei:list[@type='toc']"
+            select="$indexList"
             mode="tei"/>
     </xsl:variable>
+
+ 
+    
     
     <xd:doc>
         <xd:desc>Driver template</xd:desc>
@@ -116,7 +127,6 @@
     <xsl:template match="aside[contains-token(@class,'source-link')]/a/@href" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:attribute name="href" select="'xml/' || dhil:basename($doc) || '.xml'"/>
-        
     </xsl:template>
     
     <xd:doc>
@@ -163,7 +173,52 @@
             <xsl:apply-templates select="@*[not(local-name() = 'class')]|node()" mode="#current"/>
         </xsl:copy>
     </xsl:template>
-
+    
+    <xsl:template match="*[@id='prev']" mode="html">
+        <xsl:param name="doc" tunnel="yes"/>
+        <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
+        <xsl:variable name="curr" select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
+        <xsl:variable name="prev" select="$curr/preceding::tei:ref[1]" as="element()?"/>
+        <xsl:choose>
+            <xsl:when test="$basename = 'front'">
+                <xsl:copy>
+                    <xsl:attribute name="href" select="'index.html'"/>
+                    <xsl:sequence select="@*|node()"/>
+                </xsl:copy>
+            </xsl:when>
+            <xsl:when test="$prev">
+                <xsl:copy>
+                    <xsl:attribute name="href" select="replace($prev/@target,'.xml','.html')"/>
+                    <xsl:sequence select="@* | node()"/>
+                </xsl:copy>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="*[@id='next']" mode="html">
+        <xsl:param name="doc" tunnel="yes"/>
+        <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
+        <xsl:variable name="curr" select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
+        <xsl:variable name="next" select="$curr/following::tei:ref[1]" as="element()?"/>
+        <xsl:choose>
+            <xsl:when test="$basename = 'index'">
+                <xsl:copy>
+                    <xsl:attribute name="href" select="'front.html'"/>
+                    <xsl:sequence select="@*|node()"/>
+                </xsl:copy>
+            </xsl:when>
+            <xsl:when test="$next">
+                <xsl:copy>
+                    <xsl:attribute name="href" select="replace($next/@target,'.xml','.html')"/>
+                    <xsl:sequence select="@* | node()"/>
+                </xsl:copy>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
+    
+    
 
    <xd:doc>
        <xd:desc>Function to retrieve the basename (without extension) of a document</xd:desc>

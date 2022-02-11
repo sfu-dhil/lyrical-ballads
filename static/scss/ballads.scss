@@ -25,10 +25,11 @@ ul[data-type="toc"] {
 
 
 nav{
-    background:grey;
+    background:inherit;
     padding:.5rem 0;
     display:flex;
     width:100%;
+    border-bottom: 2px solid #050505;
 }
 
 
@@ -52,6 +53,13 @@ nav ul ul{
 
 nav ul > li:hover > ul{
     display:block;
+    position:absolute;
+    top:0;
+}
+
+main{
+    max-width:80rem;
+    margin:0 auto;
 }
 
 article ul[data-type="toc"] li {
@@ -62,6 +70,64 @@ article ul[data-type="toc"] li {
 article{
     max-width:52.5rem;
     margin:0 auto;
+}
+
+.tei-body{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+    margin: 1rem auto 2rem auto;
+    padding: 0.5rem 1.5rem;
+}
+
+aside > a{
+        display: inline-block;
+    padding: 0.3rem 0.6rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    background: #efefef;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.next-prev{
+    position:fixed;
+    top:50%;
+    font-size:1rem;
+    aspect-ratio:1 / 2;
+    display:grid;
+    place-items:center;
+    border-radius:2px;
+    text-decoration:none;    
+    color: #ccc;
+    padding:0.25rem 0.5rem;
+    
+    &:hover, &:visited{
+        color:inherit;
+        text-decoration:none;
+    }
+    &:hover{
+        & > svg{
+            opacity:.95;
+            
+        }
+    }
+    & > svg{
+        width:2em;
+        height:2em;
+        color:black;
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+}
+
+#prev{
+    left:0.25rem;
+}
+
+#next{
+    right:0;
+    
 }
 
 .page{
