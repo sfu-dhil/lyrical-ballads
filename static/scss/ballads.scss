@@ -60,13 +60,13 @@ article ul[data-type="toc"] li {
 }
 
 article{
-    max-width:60rem;
+    max-width:52.5rem;
     margin:0 auto;
 }
 
 .page{
     display:grid;
-    grid-template-columns: minmax(min-content, 50ch) clamp(10rem, 33vw, 38rem);
+    grid-template-columns: 27rem clamp(5rem, 40%, 30rem);
     @media (max-width: 767px){
         grid-template-columns: auto;
         .text{
@@ -89,10 +89,10 @@ article{
     border-top: 1px solid black;
 }
 
-*:not(.pageNum) + .tei-lg{
+:not(.pageNum, .tei-speaker) + :is(.tei-sp, .tei-lg){
     margin-top: 1em;
-    
 }
+
 
 .image{
         margin: 0 auto;

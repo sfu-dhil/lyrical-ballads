@@ -115,8 +115,16 @@
       </java>
    </target>
    
+   <target name="search">
+      <ant antfile="staticSearch/build.xml" inheritall="no">
+         <property name="ssConfigFile" value="${basedir}/staticSearch_config.xml"/>
+         
+      </ant>
+      
+   </target>
    
-   <target name="all" depends="init, deps, copyXML, copyFacs, assets, html"/>
+   
+   <target name="all" depends="init, deps, copyXML, copyFacs, assets, html, search"/>
    
   
    

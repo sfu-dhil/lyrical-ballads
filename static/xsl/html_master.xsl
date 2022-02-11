@@ -78,14 +78,45 @@
     </xsl:template>
     
     <xd:doc>
+        <xd:desc>Process the head to put in metadata blocks.</xd:desc>
+    </xd:doc>
+    <xsl:template match="html/head" mode="html">
+        <xsl:copy>
+            <xsl:apply-templates select="node()" mode="#current"/>
+            <xsl:call-template name="makeMetas"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>Template for generating the metadata</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
+    <xsl:template name="makeMetas">
+        <xsl:param name="doc" tunnel="yes"/>
+        
+        <meta name="docImage" class="staticSearch_docImage" content="{dhil:facsLink(($doc//tei:pb[@facs][1]/@facs)[1])}"/>
+        
+    </xsl:template>
+    
+    <xd:doc>
         <xd:desc>Add the document's title</xd:desc>
         <xd:param name="doc">The TEI document currently being processed.</xd:param>
     </xd:doc>
     <xsl:template match="html/head/title" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:copy>
-            <xsl:value-of select="$doc//tei:teiHeader/tei:titleStmt/tei:title[1]"/>
+            <xsl:value-of select="$doc//tei:titleStmt/tei:title[1]"/>
         </xsl:copy>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>Add link to the source XML</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
+    <xsl:template match="aside[contains-token(@class,'source-link')]/a/@href" mode="html">
+        <xsl:param name="doc" tunnel="yes"/>
+        <xsl:attribute name="href" select="'xml/' || dhil:basename($doc) || '.xml'"/>
+        
     </xsl:template>
     
     <xd:doc>
@@ -135,7 +166,7 @@
 
 
    <xd:doc>
-       <xd:desc>Function to retrieve the basename of a document</xd:desc>
+       <xd:desc>Function to retrieve the basename (without extension) of a document</xd:desc>
        <xd:param name="node">Any node in a document</xd:param>
    </xd:doc>
     <xsl:function name="dhil:basename" as="xs:string" new-each-time="no">

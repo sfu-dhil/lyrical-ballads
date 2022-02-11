@@ -20,8 +20,21 @@
     
     <xsl:mode name="tei" on-no-match="shallow-skip" _warning-on-no-match="{string($verbose)}"/>
     <xsl:mode name="raise" on-no-match="shallow-copy" _warning-on-no-match="{string($verbose)}"/>
-    
     <xsl:mode name="flatten" on-no-match="shallow-copy" _warning-on-no-match="{string($verbose)}"/>
+    
+    <xsl:accumulator name="stanza" initial-value="0">
+        <xsl:accumulator-rule match="lg[l]" select="$value + 1"/>
+    </xsl:accumulator>
+    
+    <xsl:accumulator name="line" initial-value="0">
+        <xsl:accumulator-rule match="lg[l]" select="0"/>
+        <xsl:accumulator-rule match="l" select="$value + 1"/>
+    </xsl:accumulator>
+    
+    <xsl:accumulator name="line-id" initial-value="''">
+        <xsl:accumulator-rule match="lg/l" 
+            select="'l' || accumulator-before('stanza') || '.' || accumulator-after('line')"/>
+    </xsl:accumulator>
     
     <xsl:template match="TEI" mode="tei">
         <xsl:variable name="flattened" as="document-node()">
@@ -36,25 +49,33 @@
     </xsl:template>
     
      <xsl:template match="front | body | back" mode="tei">
-         <section>
+         <section id="{local-name()}">
              <xsl:call-template name="processAtts"/>
-             <xsl:for-each-group select="node()" group-starting-with="self::pb">
-                 <xsl:variable name="pb" select="current-group()[1]/self::pb" as="element(pb)?"/>
-                 <xsl:if test="exists($pb)">
-                     <section class="page">
-                         <div class="text">
-                             <xsl:where-populated>
-                                 <div class="pageNum"><xsl:value-of select="$pb/@n"/></div>
-                             </xsl:where-populated>
-                            
-                             <xsl:apply-templates select="current-group() except $pb" mode="#current"/>
-                         </div>
-                         <div class="image">
-                             <xsl:apply-templates select="$pb" mode="#current"/>
-                         </div>
-                     </section>
-                 </xsl:if>
-             </xsl:for-each-group>         
+             <xsl:choose>
+                 <xsl:when test="descendant::pb">
+                     <xsl:for-each-group select="node()" group-starting-with="self::pb">
+                         <xsl:variable name="pb" select="current-group()[1]/self::pb" as="element(pb)?"/>
+                         <xsl:if test="exists($pb)">
+                             <section class="page">
+                                 <xsl:attribute name="id" select="'p' || ($pb/@n, generate-id($pb))[1]"/>
+                                 <div class="text">
+                                     <xsl:where-populated>
+                                         <div class="pageNum"><xsl:value-of select="$pb/@n"/></div>
+                                     </xsl:where-populated>
+                                     <xsl:apply-templates select="current-group() except $pb" mode="#current"/>
+                                 </div>
+                                 <div class="image">
+                                     <xsl:apply-templates select="$pb" mode="#current"/>
+                                 </div>
+                             </section>
+                         </xsl:if>
+                     </xsl:for-each-group>         
+                 </xsl:when>
+                 <xsl:otherwise>
+                     <xsl:apply-templates select="node()" mode="#current"/>
+                 </xsl:otherwise>
+             </xsl:choose>
+            
          </section>
      </xsl:template>
      
@@ -94,7 +115,14 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="lg | l" mode="tei">
+    <xsl:template match="lg" mode="tei">
+        <div>
+            <xsl:call-template name="processAtts"/>
+            <xsl:apply-templates mode="#current"/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="l" mode="tei">
         <div>
             <xsl:call-template name="processAtts"/>
             <xsl:apply-templates mode="#current"/>
@@ -146,6 +174,15 @@
             <xsl:call-template name="processAtts"/>
             <xsl:apply-templates mode="#current"/>
         </hr>
+    </xsl:template>
+    
+    <xd:doc>
+        <xd:desc>Special staticSearch div</xd:desc>
+    </xd:doc>
+    <xsl:template match="div[@xml:id='staticSearch']" mode="tei">
+        <div id="staticSearch">
+            <!--No content-->
+        </div>
     </xsl:template>
     
     <xsl:template match="div" mode="tei">
@@ -232,33 +269,23 @@
     </xsl:template>
     
     <xsl:template match="pb" mode="tei">
-        <img src="facs/{replace(@facs,'.png','.jpg')}" loading="lazy"/>
+        <img src="{dhil:facsLink(@facs)}" loading="lazy"/>
     </xsl:template>
     
     <xsl:template match="text()" mode="tei">
         <xsl:value-of select="."/>
     </xsl:template>
-    
-<!--    <xsl:template match="pb">
-        <xsl:variable name="pn" select="substring(@facs, 17, 3)"/>
-        <div class="pb">
-            <span class='spacer'><xsl:text> </xsl:text></span>
-        </div>
-        <img class='facs' src="{$facsBase}/FACS_{$pn}/view"/>
-        <p class='pagenumber'><xsl:value-of select="@n"/></p>
-    </xsl:template>-->
-    
 
     <xsl:template name="processAtts" as="attribute()*">
         <xsl:param name="class" as="xs:string*"/>
         <xsl:attribute name="class" select="
             ($class, 'tei-' || local-name())
             => string-join(' ')"/>
-        
-        <xsl:for-each select="@*">
-            <xsl:attribute name="data-{local-name()}" select="string(.)"/>
-        </xsl:for-each>
         <xsl:apply-templates select="@*" mode="#current"/>
+    </xsl:template>
+    
+    <xsl:template match="@xml:id" mode="tei">
+        <xsl:attribute name="id" select="."/>
     </xsl:template>
 
     <xsl:template match="@rend" mode="tei">
@@ -268,12 +295,17 @@
             </xsl:for-each>
         </xsl:attribute>
     </xsl:template>
-    
-    <xd:doc>
-        <xd:desc>Delete unnecessary attributes, since they're handled elsewhere.</xd:desc>
-    </xd:doc>
-    <xsl:template match="@*"/>
+
+
+    <xsl:template match="@*" priority="-1">
+        <xsl:attribute name="data-{local-name()}" select="."/>
+    </xsl:template>
    
+  
+    <xsl:function name="dhil:facsLink" as="xs:string">
+        <xsl:param name="facs"/>
+        <xsl:sequence select="'facs/' || replace($facs,'.png','.jpg')"/>
+    </xsl:function>
   
     <xd:doc>
         <xd:desc>This is a much cruder version of mjoyce's mm conversion, but it appears to give more-or-less correct results.</xd:desc>
@@ -327,6 +359,20 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:template match="TEI" mode="flatten">
+        <xsl:copy>
+            <xsl:apply-templates select="@*" mode="#current"/>
+            <xsl:choose>
+                <xsl:when test="descendant::pb">
+                    <xsl:apply-templates select="node()" mode="#current"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:sequence select="node()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:copy>
+    </xsl:template>
+    
     <xsl:template match="front | body | back" mode="flatten">
         <xsl:copy>
             <xsl:sequence select="@*"/>
@@ -350,6 +396,14 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:function>
+    
+    <xsl:template match="l" mode="raise">
+        <xsl:copy>
+            <xsl:attribute name="xml:id" select="accumulator-before('line-id')"/>
+            <xsl:apply-templates select="@*|node()" mode="#current"/>
+        </xsl:copy>
+        
+    </xsl:template>
     
     <xsl:template match="*[pb]" mode="raise">
         <xsl:variable name="this" select="."/>
