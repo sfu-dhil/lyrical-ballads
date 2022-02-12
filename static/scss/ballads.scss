@@ -182,9 +182,12 @@ aside > a{
 
 .page{
     display:grid;
-    grid-template-columns: 27rem clamp(5rem, 40%, 30rem);
+    grid-template-columns: 27rem auto;
+    padding: 4rem 0.75rem;
+    justify-content: space-between;
     @media (max-width: 767px){
         grid-template-columns: auto;
+        justify-content:center;
         .text{
             order: 2;
         }
@@ -195,9 +198,7 @@ aside > a{
             border-bottom: 1px solid #efefef;
         }
     }
-    gap: 1em;
-    padding: 4rem 0.75rem;
-    justify-content:center;
+
     &:first-of-type{
         padding-top:1.5rem;
     }
@@ -241,6 +242,7 @@ img{
     flex-direction:column;
     width:100%;
     padding:0.5rem;
+    
 }
 
 .footnote{
