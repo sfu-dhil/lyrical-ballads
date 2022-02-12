@@ -188,21 +188,20 @@
         <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
         <xsl:variable name="curr" select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
         <xsl:variable name="prev" select="$curr/preceding::tei:ref[1]" as="element()?"/>
-        <xsl:choose>
-            <xsl:when test="$basename = 'front'">
-                <xsl:copy>
-                    <xsl:attribute name="href" select="'index.html'"/>
-                    <xsl:sequence select="@*|node()"/>
-                </xsl:copy>
-            </xsl:when>
-            <xsl:when test="$prev">
-                <xsl:copy>
-                    <xsl:attribute name="href" select="replace($prev/@target,'.xml','.html')"/>
-                    <xsl:sequence select="@* | node()"/>
-                </xsl:copy>
-            </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
+        <xsl:copy>
+            <xsl:attribute name="href">
+                <xsl:choose>
+                    <xsl:when test="$basename = 'front'">
+                        <xsl:value-of select="'index.html'"/>
+                    </xsl:when>
+                    <xsl:when test="$prev">
+                        <xsl:value-of select="replace($prev/@target,'.xml','.html')"/>
+                    </xsl:when>
+                    <xsl:otherwise>#</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:sequence select="@* | node()"/>
+        </xsl:copy>
     </xsl:template>
     
     <xsl:template match="*[@id='next']" mode="html">
@@ -210,21 +209,20 @@
         <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
         <xsl:variable name="curr" select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
         <xsl:variable name="next" select="$curr/following::tei:ref[1]" as="element()?"/>
-        <xsl:choose>
-            <xsl:when test="$basename = 'index'">
-                <xsl:copy>
-                    <xsl:attribute name="href" select="'front.html'"/>
-                    <xsl:sequence select="@*|node()"/>
-                </xsl:copy>
-            </xsl:when>
-            <xsl:when test="$next">
-                <xsl:copy>
-                    <xsl:attribute name="href" select="replace($next/@target,'.xml','.html')"/>
-                    <xsl:sequence select="@* | node()"/>
-                </xsl:copy>
-            </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
+        <xsl:copy>
+            <xsl:attribute name="href">
+                <xsl:choose>
+                    <xsl:when test="$basename = 'index'">
+                        <xsl:value-of select="'front.html'"/>
+                    </xsl:when>
+                    <xsl:when test="$next">
+                        <xsl:value-of select="replace($next/@target,'.xml','.html')"/>
+                    </xsl:when>
+                    <xsl:otherwise>#</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:sequence select="@* | node()"/>
+        </xsl:copy>
     </xsl:template>
     
     
