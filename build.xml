@@ -118,9 +118,13 @@
    <target name="search">
       <ant antfile="staticSearch/build.xml" inheritall="no">
          <property name="ssConfigFile" value="${basedir}/staticSearch_config.xml"/>
-         
       </ant>
-      
+      <java jar="${saxon.jar}" fork="true" failOnError="true">
+         <arg line="-xsl:${xsl.dir}/postprocess-search.xsl"/>
+         <arg line="-s:${dist.dir}/search.html"/>
+         <arg line="-o:${dist.dir}/search.tmp.html"/>
+      </java>
+      <move file="${dist.dir}/search.tmp.html" tofile="${dist.dir}/search.html"/>
    </target>
    
    

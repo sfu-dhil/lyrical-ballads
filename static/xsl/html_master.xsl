@@ -89,6 +89,15 @@
     </xsl:template>
     
     <xd:doc>
+        <xd:desc>Add the HTML doc's id</xd:desc>
+    </xd:doc>
+    <xsl:template match="html/@id" mode="html">
+        <xsl:param name="doc" tunnel="yes"/>
+        <xsl:attribute name="id" select="dhil:basename($doc)"/>
+        
+    </xsl:template>
+    
+    <xd:doc>
         <xd:desc>Process the head to put in metadata blocks.</xd:desc>
     </xd:doc>
     <xsl:template match="html/head" mode="html">
