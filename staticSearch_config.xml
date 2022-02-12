@@ -39,7 +39,7 @@
     </contexts>
     
     <excludes>
-        <exclude type="index" match="html[@id='excluded']"/>
+        <exclude type="index" match="html[@id=('excluded','index')]"/>
         <exclude match="meta[contains-token(@class,'excludedMeta')]" type="filter"/>
     </excludes>
     
