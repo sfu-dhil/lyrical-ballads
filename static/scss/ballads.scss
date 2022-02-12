@@ -201,6 +201,11 @@ aside > a{
     margin-top: 1em;
 }
 
+// Don't let lines wrap
+.tei-l{
+    white-space:nowrap;
+}
+
 
 .image{
         margin: 0 auto;
