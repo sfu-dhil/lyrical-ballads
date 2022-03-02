@@ -394,7 +394,10 @@
         mechanism, we can make page beginnings images.</xd:desc>
     </xd:doc>
     <xsl:template match="pb" mode="tei">
-        <img src="{dhil:facsLink(@facs)}" loading="lazy"/>
+        <xsl:variable name="link" select="dhil:facsLink(@facs)" as="xs:string"/>
+        <a href="{$link}" target="_blank" rel="noopener noreferrer">
+            <img src="{$link}" loading="lazy"/>
+        </a>
     </xsl:template>
     
     <xd:doc>
@@ -448,23 +451,9 @@
     </xd:doc>
     <xsl:function name="dhil:facsLink" as="xs:string">
         <xsl:param name="facs"/>
-        <xsl:sequence select="dhil:facsLink($facs, true())"/>
+        <xsl:sequence select="'facs/' || replace($facs,'.png', '.jpg')"/>
     </xsl:function>
     
-    <xd:doc>
-        <xd:desc>Function to create a facsimile link; we fork this function
-            so that we can link to the thumbnail or not.</xd:desc>
-        <xd:param name="facs">The string URI for the facsimile.</xd:param>
-        <xd:param name="thumbnail">Whether to link to the thumbnail</xd:param>
-    </xd:doc>
-    <xsl:function name="dhil:facsLink" as="xs:string">
-        <xsl:param name="facs"/>
-        <xsl:param name="thumbnail" as="xs:boolean"/>
-        <xsl:variable name="link" 
-            select="if ($thumbnail) then replace($facs,'.png', '.jpg') else $facs"
-            as="xs:string"/>
-        <xsl:sequence select="'facs/' || $link"/>
-    </xsl:function>
   
     <xd:doc>
         <xd:desc>XSLT adaptation of mjoyce's PHP code for translating rend tokens that may either be a simple string or some sort of instruction (i.e. indent(5mm)).</xd:desc>
