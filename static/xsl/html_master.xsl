@@ -22,15 +22,19 @@
         <xd:param name="dist">Dist directory, passed as a parameter from ANT.</xd:param>
         <xd:param name="debug">Static flag to output debugging messages. 
             Options: 0 (false; default), 1 (true).</xd:param>
+        <xd:param name="host">The host URI</xd:param>
     </xd:doc>
     
     
     <xsl:param name="dist" select="resolve-uri('../../dist')"  as="xs:string"/>
     <xsl:param name="debug" select="'0'" as="xs:string" static="yes"/>
-    <xsl:param name="verbose" select="boolean(xs:integer($debug))" 
+    <xsl:param name="host" select="'https://dhil.lib.sfu.ca/lyrical-ballads'" as="xs:string"/>
+    
+    <xsl:variable name="verbose" select="boolean(xs:integer($debug))" 
         as="xs:boolean" static="yes"/>
 
     <xsl:include href="html_tei_module.xsl"/>
+    <xsl:include href="html_meta_module.xsl"/>
     
     <xd:doc>
         <xd:desc>Identity transform.</xd:desc>
@@ -94,29 +98,21 @@
     <xsl:template match="html/@id" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:attribute name="id" select="dhil:basename($doc)"/>
-        
     </xsl:template>
     
     <xd:doc>
         <xd:desc>Process the head to put in metadata blocks.</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
     </xd:doc>
     <xsl:template match="html/head" mode="html">
+        <xsl:param name="doc" tunnel="yes"/>
         <xsl:copy>
             <xsl:apply-templates select="node()" mode="#current"/>
-            <xsl:call-template name="makeMetas"/>
+            <xsl:apply-templates select="$doc" mode="meta"/>
         </xsl:copy>
     </xsl:template>
     
-    <xd:doc>
-        <xd:desc>Template for generating the metadata</xd:desc>
-        <xd:param name="doc">The TEI document currently being processed.</xd:param>
-    </xd:doc>
-    <xsl:template name="makeMetas">
-        <xsl:param name="doc" tunnel="yes"/>
-        
-        <meta name="docImage" class="staticSearch_docImage" content="{dhil:facsLink(($doc//tei:pb[@facs][1]/@facs)[1])}"/>
-        
-    </xsl:template>
+   
     
     <xd:doc>
         <xd:desc>Add the document's title</xd:desc>

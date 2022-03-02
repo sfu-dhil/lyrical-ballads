@@ -9,6 +9,8 @@
    
    <property name="tmp" value="${basedir}/tmp"/>
    
+   <property name="host" value="https://dhil.lib.sfu.ca/lyrical-ballads"/>
+   
    <property name="src.dir" value="${basedir}/ballad_data"/>
    <property name="src.xml.dir" value="${src.dir}/data"/>
    <property name="src.facs.dir" value="${src.dir}/facs"/>
@@ -112,6 +114,7 @@
          <arg line="-xsl:${xsl.dir}/html_master.xsl"/>
          <arg line="-it:go"/>
          <arg line="dist=${dist.dir}"/>
+         <arg line="host=${host}"/>
       </java>
    </target>
    
