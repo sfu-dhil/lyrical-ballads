@@ -19,9 +19,10 @@
     
     <xsl:mode name="meta" on-no-match="shallow-skip"/>
     
-    
+    <xd:doc>
+        <xd:desc>Simple set of templates to generate various meta tags</xd:desc>
+    </xd:doc>
     <xsl:template match="TEI" mode="meta">
-        <xsl:message select="$host"/>
         <xsl:variable name="id" select="dhil:basename(.)" as="xs:string"/>
         <xsl:variable name="title" 
             select="normalize-space(//fileDesc/titleStmt/title[1])"
@@ -29,6 +30,7 @@
         <xsl:variable name="tn" 
             select="(descendant::pb[@facs])[1]/@facs => dhil:facsLink()"
             as="xs:string?"/>
+        
         <meta name="DC.type" content="Text"/>
         <meta name="DC.identifier" content="{$id}"/>
         <meta name="twitter:card" content="summary_large_image"/>
