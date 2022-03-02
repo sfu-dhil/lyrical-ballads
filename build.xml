@@ -3,47 +3,37 @@
    
   
    <property name="debug" value="0"/> 
-   
-   <property environment="env"/>
-   
-   
-   <property name="tmp" value="${basedir}/tmp"/>
-   
    <property name="host" value="https://dhil.lib.sfu.ca/lyrical-ballads"/>
    
+   <property environment="env"/>
+   <property name="tmp" value="${basedir}/tmp"/>
    <property name="src.dir" value="${basedir}/ballad_data"/>
    <property name="src.xml.dir" value="${src.dir}/data"/>
    <property name="src.facs.dir" value="${src.dir}/facs"/>
-   
    <property name="dist.dir" value="${basedir}/public"/>
    <property name="dist.xml.dir" value="${dist.dir}/xml"/>
    <property name="dist.facs.dir" value="${dist.dir}/facs"/>
-   
    <property name="code.dir" value="${basedir}/static"/>
    <property name="xsl.dir" value="${code.dir}/xsl"/>
    <property name="lib.dir" value="${basedir}/lib"/>
-
+   
    <property name="saxon.jar" value="${lib.dir}/saxon10HE.jar"/>
    
    <condition property="sass-installed">
       <available file="sass"
          filepath="${env.PATH}"/>
    </condition>
-   
    <condition property="sassDir" value="" else="/tmp/sass/">
       <istrue value="${sass-installed}"/>
    </condition>
-   
    <condition property="saxon-installed">
       <available type="file" file="${saxon.jar}"/>
    </condition>
-   
    
    <target name="init">
       <delete dir="${dist.dir}"/>
       <mkdir dir="${dist.dir}"/>
    </target>
-   
    
    <target name="getSass" unless="sass-installed">
       <get 
@@ -62,8 +52,6 @@
    </target>
    
    <target name="deps" depends="getSaxon, getSass"/>
-   
-   <!--First, move the data over-->
    
    <target name="copyXML">
       <description>Copies all of the necessary XML files over</description>
@@ -98,15 +86,12 @@
             <exclude name="xsl/**"/>
          </fileset>
       </copy>
-      
       <!--Need to prepend the sassDir so that if it's not installed,
          it can still be run-->
       <exec executable="${sassDir}sass">
          <arg line="${dist.dir}/scss:${dist.dir}/css"/>
       </exec>
    </target>
-   
-   
    
    <target name="html">
       <description>Converts all of the XML files to HTML.</description>
@@ -130,12 +115,7 @@
       <move file="${dist.dir}/search.tmp.html" tofile="${dist.dir}/search.html"/>
    </target>
    
-   
    <target name="quick" depends="deps, copyXML, assets, html"/>
    <target name="all" depends="init, deps, copyXML, copyFacs, assets, html, search"/>
-   
-  
-   
-   
    
 </project>
