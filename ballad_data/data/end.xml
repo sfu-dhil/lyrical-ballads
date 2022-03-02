@@ -108,15 +108,14 @@
                             <lb/>
                             SOUTHEY, including the Vision of the Maid of Orleans
                             <lb/>
-                            formerly printed as the Ninth Book of JOAN OF ARC.
+                            formerly printed as the Ninth Book of JOAN OF ARC.<note xml:id="ne1">
+                                This page was removed from the book, but the content has been supplied from Duke University's 1798 edition of
+                                <bibl>
+                                    <title>Lyrical Ballads</title>
+                                </bibl>.
+                            </note>
                         </item>
-                        <note xml:id="ne1">
-                            This page was removed from the book, but the content has been supplied from Duke University's 1798 edition of
-                            <bibl>
-                                <title>Lyrical Ballads</title>
-                            </bibl>
-                            .
-                        </note>
+                        
                         <pb facs="Wordsworth_1798_231.png"/>
                         <item rend="first-indent(-5mm)">
                             MALVERN HILLS, a POEM by JOSEPH COTTLE. Quarto.

@@ -13,7 +13,10 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Nov 4, 2021</xd:p>
             <xd:p><xd:b>Author:</xd:b> takeda</xd:p>
-            <xd:p>Transformation to convert the TEI encoded texts for the Lyrical Ballads project into a static HTML site.</xd:p>
+            <xd:p>Main transformation to convert the TEI encoded texts for the Lyrical 
+                Ballads project into a static HTML site. It does so by iterating through
+                all of the TEI texts and passing them through the standard HTML template;
+                see html_tei_module.xsl for the templates that convert the TEI into HTML.</xd:p>
             <xd:p>Adapted from mjoyce's code for the Lyrical Ballads project.</xd:p>
         </xd:desc>
         <xd:param name="dist">Dist directory, passed as a parameter from ANT.</xd:param>
@@ -47,7 +50,6 @@
     
     <xsl:variable name="indexList" select="$docs[dhil:basename(.) = 'index']//tei:list[@type='toc']"/>
     
-    
     <xd:doc>
         <xd:desc>Item sequence</xd:desc>
     </xd:doc>
@@ -62,9 +64,6 @@
             mode="tei"/>
     </xsl:variable>
 
- 
-    
-    
     <xd:doc>
         <xd:desc>Driver template</xd:desc>
     </xd:doc>
@@ -90,6 +89,7 @@
     
     <xd:doc>
         <xd:desc>Add the HTML doc's id</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
     </xd:doc>
     <xsl:template match="html/@id" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
@@ -193,11 +193,20 @@
         </time>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Complicated handling for the next/prev bits; we have to investigate
+        the index list, find the element, and then get the preding link. Note that
+        we always keep the prev link in the DOM, but hide it if it doesn't
+        point to anything.</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
     <xsl:template match="*[@id='prev']" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
-        <xsl:variable name="curr" select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
-        <xsl:variable name="prev" select="$curr/preceding::tei:ref[1]" as="element()?"/>
+        <xsl:variable name="curr"
+            select="$indexList//tei:ref[@target = ($basename || '.xml')]" as="element()?"/>
+        <xsl:variable name="prev"
+            select="$curr/preceding::tei:ref[1]" as="element()?"/>
         <xsl:copy>
             <xsl:attribute name="href">
                 <xsl:choose>
@@ -214,6 +223,13 @@
         </xsl:copy>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>The same as the previous handling; this should likely be harmonized
+            into a single process since the procedure is the same (except for the axis).
+            Note that we always keep the next link in the DOM, but hide it if it doesn't
+            point to anything.</xd:desc>
+        <xd:param name="doc">The TEI document currently being processed.</xd:param>
+    </xd:doc>
     <xsl:template match="*[@id='next']" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
@@ -234,8 +250,6 @@
             <xsl:sequence select="@* | node()"/>
         </xsl:copy>
     </xsl:template>
-    
-    
 
    <xd:doc>
        <xd:desc>Function to retrieve the basename (without extension) of a document</xd:desc>
