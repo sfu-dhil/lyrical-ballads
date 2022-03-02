@@ -21,7 +21,7 @@ jobs:
               run: sudo apt-get install -y --no-install-recommends --no-upgrade ant-contrib
            # Then run the build using the default target
             - name: Build site
-              run: ant -f ${{ github.workspace }}/build.xml -Dhost=https://${{ github.repository_owner}}.github.io/${{ github.repository#*/ }}
+              run: ant -f ${{ github.workspace }}/build.xml -Dhost=https://${{ github.repository_owner}}.github.io/lyrical_ballads
             - name: Deploy 🚀
               if: ${{ !env.ACT }}
               uses: JamesIves/github-pages-deploy-action@4.1.3
