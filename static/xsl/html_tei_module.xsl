@@ -619,9 +619,12 @@
             <xsl:otherwise>
                 <xsl:for-each-group select="node()" group-ending-with="self::pb">
                     <xsl:variable name="pb" select="current-group()[last()]"/>
-                    <xsl:element namespace="http://www.tei-c.org/ns/1.0" name="{local-name($this)}">
+                    <xsl:element
+                        namespace="http://www.tei-c.org/ns/1.0"
+                        name="{local-name($this)}">
                         <xsl:sequence select="$this/@*"/>
-                        <xsl:apply-templates select="current-group() except $pb" mode="#current"/>
+                        <xsl:apply-templates 
+                            select="current-group() except $pb" mode="#current"/>
                     </xsl:element>
                     <xsl:sequence select="$pb"/>
                 </xsl:for-each-group>
