@@ -183,6 +183,16 @@
         </xsl:copy>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Add the time to the footer</xd:desc>
+    </xd:doc>
+    <xsl:template match="time" mode="html">
+        <time datetime="{current-dateTime()}">
+            <xsl:value-of
+                select="format-date(current-date(),'[MNn] [D01], [Y0001]')"/>
+        </time>
+    </xsl:template>
+    
     <xsl:template match="*[@id='prev']" mode="html">
         <xsl:param name="doc" tunnel="yes"/>
         <xsl:variable name="basename" select="dhil:basename($doc)" as="xs:string"/>
