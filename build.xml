@@ -128,6 +128,7 @@
    </target>
    
    
+   <target name="quick" depends="deps, copyXML, assets, html"/>
    <target name="all" depends="init, deps, copyXML, copyFacs, assets, html, search"/>
    
   

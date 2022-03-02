@@ -278,15 +278,17 @@
 
     <xsl:template name="processAtts" as="attribute()*">
         <xsl:param name="class" as="xs:string*"/>
-        <xsl:attribute name="class" select="
-            ($class, 'tei-' || local-name())
-            => string-join(' ')"/>
+        <xsl:variable name="ident" select="'tei-' || local-name()" as="xs:string"/>
+        
+        <xsl:attribute name="class" 
+            select="string-join(($class, $ident, @type), ' ')"/>
         <xsl:apply-templates select="@*" mode="#current"/>
     </xsl:template>
     
     <xsl:template match="@xml:id" mode="tei">
         <xsl:attribute name="id" select="."/>
     </xsl:template>
+   
 
     <xsl:template match="@rend" mode="tei">
         <xsl:attribute name="style" separator="; ">
@@ -294,11 +296,6 @@
                 <xsl:sequence select="dhil:translate_rend(.)"/>
             </xsl:for-each>
         </xsl:attribute>
-    </xsl:template>
-
-
-    <xsl:template match="@*" priority="-1">
-        <xsl:attribute name="data-{local-name()}" select="."/>
     </xsl:template>
    
   
@@ -353,6 +350,12 @@
             <xsl:when test="$ident = ('uppercase')">
                 <xsl:sequence select="'text-transform: uppercase'"/>
             </xsl:when>
+            <!--Don't do anything with left since left is the default
+                anyway-->
+            <xsl:when test="$ident = ('left')"/>
+            <!--Just do nothing with first indent since we don't have the facsimile
+                to show for it-->
+            <xsl:when test="$ident = ('first-indent')"/>
             <xsl:otherwise>
                 <xsl:message>ERROR: UNKNOWN REND TOKEN: <xsl:value-of select="$ident"/></xsl:message>
             </xsl:otherwise>
@@ -373,7 +376,7 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="front | body | back" mode="flatten">
+    <xsl:template match="front | body | back " mode="flatten">
         <xsl:copy>
             <xsl:sequence select="@*"/>
             <xsl:sequence select="node() ! dhil:flatten(.)"/>
@@ -387,7 +390,7 @@
         </xsl:variable>
         <xsl:for-each select="$test">
             <xsl:choose>
-                <xsl:when test="child::pb">
+                <xsl:when test="descendant::pb">
                     <xsl:sequence select="dhil:flatten(.)"/>
                 </xsl:when>
                 <xsl:otherwise>
@@ -402,7 +405,6 @@
             <xsl:attribute name="xml:id" select="accumulator-before('line-id')"/>
             <xsl:apply-templates select="@*|node()" mode="#current"/>
         </xsl:copy>
-        
     </xsl:template>
     
     <xsl:template match="*[pb]" mode="raise">
