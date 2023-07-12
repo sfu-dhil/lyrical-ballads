@@ -4,7 +4,7 @@
   
    <property name="debug" value="0"/> 
    <property name="host" value="https://dhil.lib.sfu.ca/lyrical-ballads"/>
-   
+
    <property environment="env"/>
    <property name="tmp" value="${basedir}/tmp"/>
    <property name="src.dir" value="${basedir}/ballad_data"/>
@@ -19,39 +19,10 @@
    
    <property name="saxon.jar" value="${lib.dir}/saxon10HE.jar"/>
    
-   <condition property="sass-installed">
-      <available file="sass"
-         filepath="${env.PATH}"/>
-   </condition>
-   <condition property="sassDir" value="" else="/tmp/sass/">
-      <istrue value="${sass-installed}"/>
-   </condition>
-   <condition property="saxon-installed">
-      <available type="file" file="${saxon.jar}"/>
-   </condition>
-   
    <target name="init">
-      <delete dir="${dist.dir}"/>
+      <delete dir="${dist.dir}" failonerror="false"/>
       <mkdir dir="${dist.dir}"/>
    </target>
-   
-   <target name="getSass" unless="sass-installed">
-      <get 
-         src="https://github.com/sass/dart-sass/releases/download/1.33.0/dart-sass-1.33.0-linux-x64.tar.gz"
-         dest="/tmp/sass.tar.gz"/>
-      <!--First make a directory-->
-      <mkdir dir="${sassDir}"/>
-      <exec executable="tar">
-         <arg line="-xf /tmp/sass.tar.gz -C ${sassDir} --strip-components 1"/>
-      </exec>
-   </target>
-   
-   <target name="getSaxon" unless="saxon-installed">
-      <mkdir dir="${lib.dir}"/>
-      <get src="https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/10.3/Saxon-HE-10.3.jar" dest="${saxon.jar}"/>
-   </target>
-   
-   <target name="deps" depends="getSaxon, getSass"/>
    
    <target name="copyXML">
       <description>Copies all of the necessary XML files over</description>
@@ -88,34 +59,34 @@
       </copy>
       <!--Need to prepend the sassDir so that if it's not installed,
          it can still be run-->
-      <exec executable="${sassDir}sass">
+      <exec executable="sass" failOnError="true">
          <arg line="${dist.dir}/scss:${dist.dir}/css"/>
       </exec>
    </target>
    
    <target name="html">
       <description>Converts all of the XML files to HTML.</description>
-      <java jar="${saxon.jar}" fork="true" failOnError="true">
+      <exec executable="saxon">
          <arg line="-xsl:${xsl.dir}/html_master.xsl"/>
          <arg line="-it:go"/>
          <arg line="dist=${dist.dir}"/>
          <arg line="host=${host}"/>
-      </java>
+      </exec>
    </target>
    
    <target name="search">
       <ant antfile="staticSearch/build.xml" inheritall="no">
          <property name="ssConfigFile" value="${basedir}/staticSearch_config.xml"/>
       </ant>
-      <java jar="${saxon.jar}" fork="true" failOnError="true">
+      <exec executable="saxon">
          <arg line="-xsl:${xsl.dir}/postprocess-search.xsl"/>
          <arg line="-s:${dist.dir}/search.html"/>
          <arg line="-o:${dist.dir}/search.tmp.html"/>
-      </java>
+      </exec>
       <move file="${dist.dir}/search.tmp.html" tofile="${dist.dir}/search.html"/>
    </target>
    
-   <target name="quick" depends="deps, copyXML, assets, html"/>
-   <target name="all" depends="init, deps, copyXML, copyFacs, assets, html, search"/>
+   <target name="quick" depends="copyXML, assets, html"/>
+   <target name="all" depends="init, copyXML, copyFacs, assets, html, search"/>
    
 </project>

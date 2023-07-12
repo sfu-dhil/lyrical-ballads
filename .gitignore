@@ -15,3 +15,5 @@ github
 
 #Ignore the lib
 lib
+
+.idea
