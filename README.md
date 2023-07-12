@@ -7,7 +7,7 @@ This repository contains the code and data for creating a static version of the 
 In all cases, first clone and navigate to the repository:
 
 ```bash
-git clone https://github.com/sfu-dhil/lyrical_ballads
+git clone https://github.com/sfu-dhil/lyrical-ballads
 cd lyrical_ballads
 ```
 
@@ -18,15 +18,16 @@ cd lyrical_ballads
 First build the image:
 
 ```bash
-docker build . -t lyrical_ballads:latest
+docker build . -t lyricalballads:latest
 ```
 
 The run `ant` using the `lyrical_ballads` image:
 
 ```bash
-docker run -it -v $(pwd):/var/www lyrical_ballads ant -f build.xml
+docker run -it -v $(pwd):/var/www lyricalballads ant -f build.xml
 ```
 
+See `.github/workflows/build.yml` for example
 ### Linux / MacOS
 
 Requires: `ant`, `imagemagick`, `sass`

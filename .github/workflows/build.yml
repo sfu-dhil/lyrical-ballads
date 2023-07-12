@@ -25,13 +25,13 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Build Docker image
-        run: docker build . -t lyrical_ballads:latest
+        run: docker build . -t lyricalballads:latest
 
       - name: Build site
         run: |
           docker run \
             -v ${{ github.workspace }}:/var/www \
-            lyrical_ballads:latest \
+            lyricalballads:latest \
             ant -f build.xml
 
       - name: Upload artifacts
