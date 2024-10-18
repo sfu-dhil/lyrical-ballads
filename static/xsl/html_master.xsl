@@ -253,7 +253,7 @@
    </xd:doc>
     <xsl:function name="dhil:basename" as="xs:string" new-each-time="no">
         <xsl:param name="node"/>
-        <xsl:variable name="uri" select="document-uri(root($node))" as="xs:anyURI"/>
+        <xsl:variable name="uri" select="base-uri(root($node))" as="xs:anyURI"/>
         <xsl:sequence select="tokenize($uri,'[/\.]')[last() -1]"/>
     </xsl:function>
     
