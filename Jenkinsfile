@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ant -f build.xml'
-                 archiveArtifacts artifacts: 'products/*', followSymLinks: false, onlyIfSuccessful: true
+                archiveArtifacts artifacts: 'products/*', followSymlinks: false, onlyIfSuccessful: true
             }
         }
     }
