@@ -8,7 +8,7 @@ pipeline {
                 withAnt {
                     sh 'ant -f build.xml'
                 }
-                archiveArtifacts artifacts: 'public/*', followSymlinks: false, onlyIfSuccessful: true
+                archiveArtifacts artifacts: 'public/**/*', followSymlinks: false, onlyIfSuccessful: true
             }
         }
     }
