@@ -1,16 +1,14 @@
 pipeline {
     agent {
         dockerfile {
-            args '-v ${PWD}:/var/www
+            args '-v ${PWD}:/var/www'
         }
     }
     stages {
         stage('Build') {
             steps {
                 sh 'ant -f build.xml'
-            }
-            post {
-                archiveArtifacts artifacts: 'products/*', followSymLinks: false, onlyIfSuccessful: true
+                 archiveArtifacts artifacts: 'products/*', followSymLinks: false, onlyIfSuccessful: true
             }
         }
     }
