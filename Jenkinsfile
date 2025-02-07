@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'dhilsfu/static-base:latest' }
+        docker { image 'dhilsfu/static-base:main' }
     }
     stages {
         stage('Build') {
