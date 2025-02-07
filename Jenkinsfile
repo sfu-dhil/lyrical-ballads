@@ -5,7 +5,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ant -f build.xml'
+                withAnt {
+                    sh 'ant -f build.xml'
+                }
                 archiveArtifacts artifacts: 'products/*', followSymlinks: false, onlyIfSuccessful: true
             }
         }
