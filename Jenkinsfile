@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        dockerfile {
-            args '-v ${PWD}:/var/www'
-        }
+        docker { image: 'dhilsfu/static-base:latest' }
     }
     stages {
         stage('Build') {
