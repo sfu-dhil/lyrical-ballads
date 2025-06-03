@@ -11,7 +11,7 @@ pipeline {
                 archiveArtifacts artifacts: 'public/**/*', followSymlinks: false, onlyIfSuccessful: true
                 emailext body: 'Test Message',
                     subject: 'Test Subject',
-                    to: credentials('TEST_EMAIL_LIST')
+                    to: '${env.TEST_EMAIL_LIST}'
             }
         }
     }
