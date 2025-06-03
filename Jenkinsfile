@@ -9,6 +9,9 @@ pipeline {
                     sh 'ant -f build.xml'
                 }
                 archiveArtifacts artifacts: 'public/**/*', followSymlinks: false, onlyIfSuccessful: true
+                emailext body: 'Test Message',
+                    subject: 'Test Subject',
+                    to: 'test@example.com'
             }
         }
     }
